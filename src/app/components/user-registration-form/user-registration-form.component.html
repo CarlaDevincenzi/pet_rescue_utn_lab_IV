@@ -1,0 +1,106 @@
+<section class="seccion">
+    <fieldset class="camp">
+        <legend id="encabezado">Nuevo Usuario</legend>
+
+        <form  id="formulario" (ngSubmit)="addUser()" [formGroup]="formulario">
+            <div class="campo">
+                <label for="dni">DNI:</label >
+                <input type="number" id="dni" formControlName="dni">
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" formControlName="apellido">
+            </div>
+            <div class="campo">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" formControlName="nombre">
+            </div>
+            <div class="campo">
+                <label for="calle">Calle: </label>
+                <input type="text" id="calle" formControlName="calle">
+            </div>
+            <div class="campo">
+                <label for="numero">Numero: </label>
+                <input type="number" id="numero" formControlName="numero">
+            </div>
+
+            <div class="campo">
+                <label for="piso">Piso: </label>
+                <input type="text" id="piso" formControlName="piso">
+            </div>
+
+            <div class="campo">
+                <label for="departamento">Departamento: </label>
+                <input type="text" id="departamento" formControlName="departamento">
+            </div>
+
+            <div class="campo">
+                <label for="codigoPostal">Codigo Postal: </label>
+                <input type="number" id="codigoPostal" formControlName="codigoPostal">
+            </div>
+            <div class="campo">
+                <label for="telefono">Telefono: </label>
+                <input type="number" id="telefono" formControlName="telefono">
+            </div>
+            <div class="campo">
+                <label for="email">Email: </label>
+                <input type="email" id="email"  formControlName="email">
+            </div>
+            <div class="campo">
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password"  formControlName="password">
+            </div>
+
+            <div class="campo">
+                <legend id="encabezado">Vivienda y Familia</legend>
+            </div>
+        
+            <div class="campo">
+                <label for="integrantes">Cantidad de integrantes:</label>
+                <input type="number" id="integrantes"  formControlName="integrantes">
+            </div>
+            <div class="campo">
+                <label for="niños">Niños: </label>
+                <input type="radio"  value= true formControlName="niños">Si 
+                <input type="radio"  value= false formControlName="niños">No
+              
+            </div>
+            <div class="campo">
+                <label for="mascota">Mascotas: </label>
+                <input type="radio"  value="si"  formControlName="mascota">Si
+                <input type="radio"  value="No"  formControlName="mascota">No 
+            </div>
+            <div class="campo">
+                <label for="especificacion">En caso afirmativo especificar</label>
+                <input type="text"  formControlName="especificacion">
+            </div>  
+                
+            
+            <div class="campo">
+                <label for="tipo">Tipo de Vivienda</label>
+                <select name="tipoVivienda" formControlName="tipoVivienda">
+                    <option value="Casa" >Casa</option>
+                    <option value="Departamento">Departamento</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="ambientes">Ambientes: </label>
+                <input type="number" id="ambientes" formControlName="ambientes">
+            </div>
+
+            <div class="campo">
+                <label for="patio">Patio/Parque </label>
+                <input type="radio" name="patio" value="si" formControlName="patio">Si
+                <input type="radio" name="patio" value="No" formControlName="patio">No
+              
+            </div>
+    
+            <div class="campo">
+                <input type="submit" value="Crear Usuario">
+            </div>
+            
+        </form>
+    </fieldset>
+</section>
