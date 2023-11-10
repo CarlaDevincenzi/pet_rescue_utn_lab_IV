@@ -1,3 +1,3 @@
-export const Environments = {
+export const environments = {
     baseUrl: 'http://localhost:4000'
 }
