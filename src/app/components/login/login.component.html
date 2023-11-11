@@ -1,0 +1,40 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <img class="mb-4" src="../../../assets/img/img-login.png" alt="" width="120"
+            height="100">
+        <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
+    <div class="mb-3">
+        <mat-form-field appearance="fill">
+            <mat-label>dni sin puntos</mat-label>
+            <input matInput formControlName="dni">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <div *ngIf="dni.invalid && (dni.dirty || dni.touched)"
+            class="text-danger">
+            <div *ngIf="dni.errors?.['required']">
+                El DNI es requerido.
+            </div>
+            <div *ngIf="dni.errors?.['pattern']">
+                El DNI solo puede tener numeros
+            </div>
+            <div *ngIf="dni.errors?.['maxlength'] || dni.errors?.['minlength']">
+                El DNI puede tener entre 7 y 8 digitos
+            </div>
+        </div>          
+    </div>
+    <div class="mb-3">
+        <mat-form-field>
+            <mat-label>contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <div *ngIf="password.invalid && (password.dirty || password.touched)"
+            class="text-danger">
+            <div *ngIf="password.errors?.['required']">
+                La contraseña es requerida.
+            </div>
+        </div> 
+    </div>        
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>

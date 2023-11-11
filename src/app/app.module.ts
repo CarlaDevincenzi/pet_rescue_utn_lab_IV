@@ -8,19 +8,35 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserRegistrationFormComponent } from './components/user-registration-form/user-registration-form.component';
 import { UserAvailabilityFormComponent } from './components/user-availability-form/user-availability-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormFieldAppearanceComponent } from './components/shared/form-field-appearance/form-field-appearance.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import { FormFieldPasswordViewComponent } from './components/shared/form-field-password-view/form-field-password-view.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserRegistrationFormComponent,
-    UserAvailabilityFormComponent
+    UserAvailabilityFormComponent,
+    FormFieldAppearanceComponent,
+    FormFieldPasswordViewComponent,
+    LoginComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
