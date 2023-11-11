@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "back": "json-server --watch database/pet-rescue.json -p 4000"
   },
   "private": true,
   "dependencies": {
