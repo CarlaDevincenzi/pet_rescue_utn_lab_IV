@@ -4,5 +4,5 @@ export class Disponibilidad{
     endDate:string ='';
     size: string = '';
     especie:string = '';
-    tipoEspecie:string = '';
+    
 }

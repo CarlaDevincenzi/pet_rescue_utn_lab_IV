@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-user-availability-form',
@@ -8,21 +8,29 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class UserAvailabilityFormComponent {
   
-  formularioDis: FormGroup = this.formBuilder.group({
-    startDate:'',
-    endDate: '',
-    size:'',
-    especie:'otro',
-    tipoEspecie:'',
+
+
+  formularioDis = new FormGroup ({
+    startDate: new FormControl(''),
+    endDate: new FormControl(''),
+    size:new FormControl(''),
+    especie:new FormControl(''),
+ 
     
   });
 
-  constructor(private formBuilder: FormBuilder ){}
+  get startDate() {return this.formularioDis.get('startDate')}
+  get endDate() {return this.formularioDis.get('endDate')}
+  get size() {return this.formularioDis.get('size')}
+  get especie() {return this.formularioDis.get('especie')}
+
+
+  constructor( ){}
   
   ngOninit(): void{}
 
   addDis(){
-    console.log(this.formularioDis.value) //mostramos por consola los valores del formulario
+    // console.log(this.formularioDis.value) //mostramos por consola los valores del formulario
 
 }
 
