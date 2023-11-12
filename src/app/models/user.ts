@@ -1,10 +1,11 @@
+import { Disponibilidad } from "./disponibilidad";
 import { Domicilio } from "./domicilio";
 import { Vivienda } from "./vivienda";
 
 export class User{
 
     fechaRegistro: Date = new Date();
-    idUsuario: number=0;
+    id: number=0;
     tipo: Array<string>=[];
     dni: number=0;
     apellido: string='';
@@ -14,16 +15,7 @@ export class User{
     email: string='';
     contraseña: string='';
     datosVivienda: Vivienda = new Vivienda();
-    disponibilidad: object = {
-        date1:'',
-        date2:'',
-        size:'',
-        especie:'',
-        tipoEspecie:''
-    }
-
-
-
-
+    disponibilidad: Disponibilidad = new Disponibilidad();
+       
 }
 
