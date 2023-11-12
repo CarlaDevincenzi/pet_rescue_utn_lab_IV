@@ -17,6 +17,8 @@ import { FormFieldPasswordViewComponent } from './components/shared/form-field-p
 import { LoginComponent } from './components/login/login.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import {HttpClientModule}  from '@angular/common/http';
+import { UserHomePageComponent } from './pages/user-home-page/user-home-page.component';
+import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {HttpClientModule}  from '@angular/common/http';
     FormFieldAppearanceComponent,
     FormFieldPasswordViewComponent,
     LoginComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    UserHomePageComponent,
+    AdminHomePageComponent
   ],
   imports: [
     BrowserModule,

@@ -35,8 +35,10 @@ export class LoginComponent {
               if(this.user.contraseña === this.password.value) {
                   localStorage.setItem("userId", JSON.stringify(this.user.idUsuario));
                   localStorage.setItem("userType", JSON.stringify(this.user.tipo));
-                  //this.router.navigateByUrl("/user-home"); // se comenta por falta de implementacion
-                  alert("Te logueaste correctamente!"); // despues borrar                  
+                  this.user.tipo.includes("ADMIN") 
+                      ? this.router.navigateByUrl("/admin-home")
+                      : this.router.navigateByUrl("/user-home") 
+                                   
                   this.loginForm.reset();
               } else {
                 this.loginError = "Contraseña incorrecta";
@@ -44,11 +46,11 @@ export class LoginComponent {
             } else {
               this.loginError = "Usuario no Registrado";
             }
-        },
-        error: (errorData) => {
-          console.error(errorData);
-        }
-    })    
+          },
+          error: (errorData) => {
+            console.error(errorData);
+          }
+      })    
     }else {
         this.loginForm.markAllAsTouched();
     }
