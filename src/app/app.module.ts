@@ -16,6 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormFieldPasswordViewComponent } from './components/shared/form-field-password-view/form-field-password-view.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import {HttpClientModule}  from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

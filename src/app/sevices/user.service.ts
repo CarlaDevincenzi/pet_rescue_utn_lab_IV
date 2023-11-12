@@ -4,11 +4,10 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user';
 import { environments } from 'src/environments/environments';
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UserService {   
 
   private apiUrl:string = `${environments.baseUrl}/usuarios`;
   
@@ -35,6 +34,11 @@ export class UserService {
     deleteUser(id: number): Observable<User> {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete<User>(url);
+  }
+
+  /* Manejo de sesion */
+  logOut(){
+    localStorage.clear();
   }
 
 }

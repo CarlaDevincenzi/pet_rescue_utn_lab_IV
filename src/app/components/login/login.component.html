@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="loginForm" (ngSubmit)="login()">
     <img class="mb-4" src="../../../assets/img/img-login.png" alt="" width="120"
             height="100">
         <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
@@ -35,6 +35,8 @@
                 La contraseña es requerida.
             </div>
         </div> 
-    </div>        
-        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+        <p class="text-danger">{{loginError}}</p>        
+        
+        <button type="submit" class="btn btn-primary">Submit</button>        
 </form>

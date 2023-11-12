@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user';
+import { UserService } from 'src/app/sevices/user.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  hide: boolean = true;
+  hide: boolean = true;  
+  loginError:string = "";
+  user!: User | any;
+
 
   loginForm = this.formBuilder.group({
     dni: ['', [Validators.required, Validators.pattern('^[0-9]+$'), Validators.maxLength(8), Validators.minLength(7)]],
@@ -18,14 +23,34 @@ export class LoginComponent {
   get password() { return this.loginForm.controls.password; }
   get dni() { return this.loginForm.controls.dni; }
 
-  constructor(private formBuilder: FormBuilder, private router: Router){ }
+  constructor(private formBuilder: FormBuilder, private router: Router, private userService: UserService){ }  
 
-  onSubmit(){
+  login(){
     if(this.loginForm.valid){
-      console.log("llamar al servicio de login");
-      //this.router.navigateByUrl("/inicio"); // se comenta por falta de implementacion
+      this.userService.getUsers().subscribe({
+          next: (userData) => {    
+            this.user = userData.find(u => u.dni === Number(this.dni.value));
+
+            if(this.user) {
+              if(this.user.contraseña === this.password.value) {
+                  localStorage.setItem("userId", JSON.stringify(this.user.idUsuario));
+                  localStorage.setItem("userType", JSON.stringify(this.user.tipo));
+                  //this.router.navigateByUrl("/user-home"); // se comenta por falta de implementacion
+                  alert("Te logueaste correctamente!"); // despues borrar                  
+                  this.loginForm.reset();
+              } else {
+                this.loginError = "Contraseña incorrecta";
+              }
+            } else {
+              this.loginError = "Usuario no Registrado";
+            }
+        },
+        error: (errorData) => {
+          console.error(errorData);
+        }
+    })    
     }else {
-      alert("Error al ingresar los datos");
+        this.loginForm.markAllAsTouched();
     }
   }
 }
