@@ -1,43 +1,49 @@
 {
-    "usuarios" : [
-        {            
-            "idUsuario": 1,
-            "tipo": ["ADMIN"],
-            "dni": 32262458,    
-            "contraseña": "admin123"    
-        },
-        {            
-            "idUsuario": 2,
-            "tipo": ["TRANSITO"],
-            "dni": 25987456,
-            "apellido": "Fulanito",
-            "nombre": "Cosme",
-            "domicilio": {
-                "calle": "Avenida Siempre Viva",
-                "numero": 742,
-                "piso": 0,
-                "departamento": "",
-                "codigoPostal": 7600
-            },
-            "telefono": 2235888222,
-            "email": "cfulanito@gmail.com",
-            "contraseña": "fulanito",
-            "datosVivienda": {
-                "integrantes": 5,
-                "ninios": true,
-                "mascota": true,
-                "especificacion": "gato y perro",
-                "tipoVivienda": "CASA",
-                "ambientes": 5,
-                "patio": true
-            },
-            "disponibilidad": {
-                "startDate": "",
-                "endDate":"",
-                "size":"",
-                "especie":"",
-                "tipoEspecie":""
-            }
-        }       
-    ]
+  "usuarios": [
+    {
+      "idUsuario": 1,
+      "tipo": [
+        "ADMIN"
+      ],
+      "dni": 32262458,
+      "contraseña": "admin123"
+    },
+    {
+      "idUsuario": 2,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 25987456,
+      "apellido": "Fulanito",
+      "nombre": "Cosme",
+      "domicilio": {
+        "calle": "Avenida Siempre Viva",
+        "numero": 742,
+        "piso": 0,
+        "departamento": "",
+        "codigoPostal": 7600
+      },
+      "telefono": 2235888222,
+      "email": "cfulanito@gmail.com",
+      "contraseña": "fulanito",
+      "datosVivienda": {
+        "integrantes": 5,
+        "ninios": true,
+        "mascota": true,
+        "especificacion": "gato y perro",
+        "tipoVivienda": "CASA",
+        "ambientes": 5,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "",
+        "especie": ""       
+      }
+    }
+  ],
+  "animales": [
+    
+  ]
 }

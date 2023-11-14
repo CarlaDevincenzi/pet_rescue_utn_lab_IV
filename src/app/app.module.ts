@@ -19,6 +19,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import {HttpClientModule}  from '@angular/common/http';
 import { UserHomePageComponent } from './pages/user-home-page/user-home-page.component';
 import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.component';
+import { AnimalRegistrationFormComponent } from './components/animal-registration-form/animal-registration-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.
     LoginComponent,
     LoginPageComponent,
     UserHomePageComponent,
-    AdminHomePageComponent
+    AdminHomePageComponent,
+    AnimalRegistrationFormComponent
   ],
   imports: [
     BrowserModule,

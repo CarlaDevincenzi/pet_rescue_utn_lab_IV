@@ -10,15 +10,15 @@
         </mat-form-field>
         <div *ngIf="dni.invalid && (dni.dirty || dni.touched)"
             class="text-danger">
-            <div *ngIf="dni.errors?.['required']">
+            <small *ngIf="dni.errors?.['required']">
                 El DNI es requerido.
-            </div>
-            <div *ngIf="dni.errors?.['pattern']">
+            </small>
+            <small *ngIf="dni.errors?.['pattern']">
                 El DNI solo puede tener numeros
-            </div>
-            <div *ngIf="dni.errors?.['maxlength'] || dni.errors?.['minlength']">
+            </small>
+            <small *ngIf="dni.errors?.['maxlength'] || dni.errors?.['minlength']">
                 El DNI puede tener entre 7 y 8 digitos
-            </div>
+            </small>
         </div>          
     </div>
     <div class="mb-3">
@@ -31,9 +31,9 @@
         </mat-form-field>
         <div *ngIf="password.invalid && (password.dirty || password.touched)"
             class="text-danger">
-            <div *ngIf="password.errors?.['required']">
+            <small *ngIf="password.errors?.['required']">
                 La contraseña es requerida.
-            </div>
+            </small>
         </div> 
     </div>
         <p class="text-danger">{{loginError}}</p>        
