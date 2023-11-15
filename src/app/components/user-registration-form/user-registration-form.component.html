@@ -14,6 +14,9 @@
                 <small class="alert alert-danger" role="alert" *ngIf="formulario.get('dni')?.errors?.['required']">
                     El DNI es obligatorio
                 </small>
+                <div *ngIf="formulario.get('dni')?.hasError('dniExists')">
+                    El DNI ya existe.
+                </div>
             </div> 
             <br>
             <div class="campo">
@@ -77,14 +80,14 @@
             </div><br>
             <div class="campo">
                 <label for="niños">Niños: </label>
-                <input type="radio"  value= TRUE formControlName="niños">Si 
-                <input type="radio"  value= FALSE formControlName="niños">No
+                <input type="radio"  value= "true" formControlName="niños">Si 
+                <input type="radio"  value= "false" formControlName="niños">No
               
             </div><br>
             <div class="campo">
                 <label for="mascota">Mascotas: </label>
-                <input type="radio"  value="TRUE"  formControlName="mascota">Si
-                <input type="radio"  value="FALSE"  formControlName="mascota">No 
+                <input type="radio"  value="true"  formControlName="mascota">Si
+                <input type="radio"  value="false"  formControlName="mascota">No 
             </div><br>
             <div class="campo">
                 <label for="especificacion">En caso afirmativo especificar</label>
@@ -94,9 +97,9 @@
             <div class="campo">
                 <label for="tipo">Tipo de Vivienda</label>
                 <select name="tipoVivienda" formControlName="tipoVivienda">
-                    <option value="Casa" >Casa</option>
-                    <option value="Departamento">Departamento</option>
-                    <option value="Otro">Otro</option>
+                    <option value="CASA" >Casa</option>
+                    <option value="DEPARTAMENTO">Departamento</option>
+                    <option value="OTRO">Otro</option>
                 </select>
             </div><br>
 
@@ -107,18 +110,20 @@
 
             <div class="campo">
                 <label for="patio">Patio/Parque </label>
-                <input type="radio" name="patio" value="TRUE" formControlName="patio">Si
-                <input type="radio" name="patio" value="FALSE" formControlName="patio">No
+                <input type="radio" name="patio" value="true" formControlName="patio">Si
+                <input type="radio" name="patio" value="false" formControlName="patio">No
               
             </div><br>
 
             <div class="campo">
-                <label for="tipo">¿Te interesa dar transito?</label>
-                <select name="tipoVivienda" formControlName="transito">
-                    <option value="TRUE" >Si</option>
-                    <option value="FALSE">No</option>
-                </select>
-            </div> <br>
+                <label for="mascota">desea dar transito: </label>
+                <input type="radio"  value="true"  formControlName="transito">Si
+                <input type="radio"  value="false"  formControlName="transito">No 
+            </div><br>
+
+            <div *ngIf="mostrarComponenteDisponibilidad">
+                <app-user-availability-form></app-user-availability-form>
+            </div>
     
             <div class="campo">
                 <input type="submit" value="Crear Usuario">
