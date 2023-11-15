@@ -1,0 +1,100 @@
+<form [formGroup]="animalForm" (ngSubmit)="enviar()">    
+    <div class="campo">
+        <label for="estado">Estado: </label>
+        <input type="radio"  value="TRANSITO" formControlName="estado">TRANSITO 
+        <input type="radio"  value="ADOPTADO" formControlName="estado">ADOPTADO
+        <input type="radio"  value="PENDIENTE" formControlName="estado">PENDIENTE
+        <div *ngIf="animalForm.get('estado')?.invalid && (animalForm.get('estado')?.dirty || animalForm.get('estado')?.touched)">
+          <small class="text-danger" *ngIf="animalForm.get('estado')?.errors?.['required']">El estado es requerido.</small>          
+        </div>      
+    </div>
+    <br/>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" formControlName="nombre" id="nombre" aria-describedby="emailHelp">
+        <div *ngIf="animalForm.get('nombre')?.invalid && (animalForm.get('nombre')?.dirty || animalForm.get('nombre')?.touched)">
+          <small class="text-danger" *ngIf="animalForm.get('nombre')?.errors?.['required']">El nombre es requerido.</small>
+          <small class="text-danger" *ngIf="animalForm.get('nombre')?.errors?.['pattern']">El nombre solo puede tener letras</small>          
+        </div>        
+      </div>
+
+      <br/>
+      
+      <div class="campo">
+        <label for="especie">Especie: </label>
+        <input type="radio"  value="GATO" formControlName="especie">GATO 
+        <input type="radio"  value="PERRO" formControlName="especie">PERRO
+        <div *ngIf="animalForm.get('especie')?.invalid && (animalForm.get('especie')?.dirty || animalForm.get('especie')?.touched)">
+          <small class="text-danger" *ngIf="animalForm.get('especie')?.errors?.['required']">La especie es requerida.</small>          
+        </div>            
+    </div>
+    <br/>
+
+    <div class="campo">
+      <label for="sexo">Sexo: </label>
+      <input type="radio"  value="HEMBRA" formControlName="sexo">HEMBRA
+      <input type="radio"  value="MACHO" formControlName="sexo">MACHO
+      <div *ngIf="animalForm.get('sexo')?.invalid && (animalForm.get('sexo')?.dirty || animalForm.get('sexo')?.touched)">
+        <small class="text-danger" *ngIf="animalForm.get('sexo')?.errors?.['required']">El sexo del animal es requerido.</small>          
+      </div>             
+  </div>
+    <br/>
+
+  <div class="campo">
+      <label for="size">Tamaño: </label>
+      <input type="radio"  value="CHICO" formControlName="size">CHICO
+      <input type="radio"  value="MEDIANO" formControlName="size">MEDIANO            
+      <input type="radio"  value="GRANDE" formControlName="size">GRANDE
+      <div *ngIf="animalForm.get('size')?.invalid && (animalForm.get('size')?.dirty || animalForm.get('size')?.touched)">
+        <small class="text-danger" *ngIf="animalForm.get('size')?.errors?.['required']">El tamaño es requerido.</small>          
+      </div>             
+  </div>
+    <br/>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Edad aproximada:</label>
+        <input type="number" class="form-control" formControlName="edad" id="edad" aria-describedby="emailHelp">
+        <div *ngIf="animalForm.get('edad')?.invalid && (animalForm.get('edad')?.dirty || animalForm.get('edad')?.touched)">
+          <small class="text-danger" *ngIf="animalForm.get('edad')?.errors?.['required']">La edad es requerida.</small>
+          <small class="text-danger" *ngIf="animalForm.get('edad')?.errors?.['min']">La edad debe ser mayor o igual a 0.</small>
+        </div>       
+    </div>
+    <br/>
+
+    <label for="exampleInputEmail1" class="form-label">Compatibilidad:</label>
+    <div class="mb-3">
+      <div class="form-check form-check-inline" *ngFor="let compatibilidad of compatibilidades">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          [id]="compatibilidad"
+          [value]="compatibilidad"
+          (change)="onCheckboxChange($event)"
+        >
+        <label class="form-check-label" [for]="compatibilidad">{{ compatibilidad }}</label>
+      </div>
+    </div>    
+    <br/>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripcion:</label>
+        <textarea class="form-control" formControlName="descripcion" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div *ngIf="animalForm.get('descripcion')?.invalid && (animalForm.get('descripcion')?.dirty || animalForm.get('descripcion')?.touched)">
+          <small class="text-danger" *ngIf="animalForm.get('descripcion')?.errors?.['required']">Una descripcion es requerida.</small>          
+        </div>
+    </div>
+    <br/>
+    
+    <div class="input-group">      
+      <input type="file" class="form-control" formControlName="imagen" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+      <button class="btn btn-outline-secondary" type="button" (click)="addImg()" id="inputGroupFileAddon04">Cargar imagen</button>
+      <div *ngIf="animalForm.get('imagen')?.invalid && (animalForm.get('imagen')?.dirty || animalForm.get('imagen')?.touched)">
+        <small class="text-danger" *ngIf="animalForm.get('imagen')?.errors?.['required']">Al menos una imagen es requerida.</small>
+        <small class="text-danger" *ngIf="animalForm.get('imagen')?.errors?.['pattern']">El formato valido es: jpg, jpeg, png</small>        
+      </div>
+    </div>
+    <br/>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>      
+</form>
