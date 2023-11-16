@@ -1,18 +1,18 @@
-import { Component, Input, OnInit,  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Animal } from 'src/app/models/animal';
 import { AnimalService } from 'src/app/sevices/animal.service';
 
 @Component({
-  selector: 'app-user-home-page',
-  templateUrl: './user-home-page.component.html',
-  styleUrls: ['./user-home-page.component.css']
+  selector: 'app-home-page',
+  templateUrl: './home-page.component.html',
+  styleUrls: ['./home-page.component.css']
 })
-export class UserHomePageComponent implements OnInit {
+export class HomePageComponent implements OnInit{
   
   constructor(private animalService: AnimalService){} // TODO: inyectar service de animal, para hacer el getAll
 	
   animals: Array<Animal> = [];
-
+  
   ngOnInit(): void {
 		this.animalService.getAnimals().subscribe({
 			next: (response) => {

@@ -1,0 +1,8 @@
+<div class="card-container">
+    <div *ngFor="let animal of animals" class="card">          
+        <app-card   [img_src]="animal.imagenes[0]"
+                    [title]="animal.nombre"
+                    [short_description]="animal.descripcion.substring(0, 100).concat(' ...')"
+        ></app-card>          			
+    </div> 
+</div>

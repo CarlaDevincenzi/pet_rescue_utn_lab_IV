@@ -16,7 +16,7 @@ export class LoginComponent {
 
 
   loginForm = this.formBuilder.group({
-    dni: ['', [Validators.required, Validators.pattern('^[0-9]+$'), Validators.maxLength(8), Validators.minLength(7)]],
+    dni: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
     password: ['', [Validators.required]]
   })
 
@@ -32,8 +32,8 @@ export class LoginComponent {
             this.user = userData.find(u => u.dni === Number(this.dni.value));
 
             if(this.user) {
-              if(this.user.contraseña === this.password.value) {
-                  localStorage.setItem("userId", JSON.stringify(this.user.idUsuario));
+              if(this.user.contrasenia === this.password.value) {
+                  localStorage.setItem("userId", JSON.stringify(this.user.id));
                   localStorage.setItem("userType", JSON.stringify(this.user.tipo));
                   this.user.tipo.includes("ADMIN") 
                       ? this.router.navigateByUrl("/admin-home")
