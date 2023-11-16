@@ -15,10 +15,7 @@
             </small>
             <small *ngIf="dni.errors?.['pattern']">
                 El DNI solo puede tener numeros
-            </small>
-            <small *ngIf="dni.errors?.['maxlength'] || dni.errors?.['minlength']">
-                El DNI puede tener entre 7 y 8 digitos
-            </small>
+            </small>            
         </div>          
     </div>
     <div class="mb-3">
@@ -38,5 +35,5 @@
     </div>
         <p class="text-danger">{{loginError}}</p>        
         
-        <button type="submit" class="btn btn-primary">Submit</button>        
+        <button type="submit" class="btn btn-primary">Iniciar sesion</button>        
 </form>

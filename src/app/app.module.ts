@@ -21,6 +21,10 @@ import { UserHomePageComponent } from './pages/user-home-page/user-home-page.com
 import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.component';
 import { AnimalRegistrationFormComponent } from './components/animal-registration-form/animal-registration-form.component';
 import { RegistrationPageComponent } from './pages/registration-page/registration-page.component';
+import { CardComponent } from './components/card/card.component';
+import { ListAnimalComponent } from './components/list-animal/list-animal.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @NgModule({
@@ -35,7 +39,10 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     UserHomePageComponent,
     AdminHomePageComponent,
     AnimalRegistrationFormComponent,
-    RegistrationPageComponent,
+    RegistrationPageComponent,    
+    CardComponent,
+    ListAnimalComponent,
+    HomePageComponent,
     NavbarComponent
   ],
   imports: [

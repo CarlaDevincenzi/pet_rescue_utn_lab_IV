@@ -6,7 +6,7 @@
         "ADMIN"
       ],
       "dni": 32262458,
-      "contraseña": "admin123"
+      "contrasenia": "admin123"
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       },
       "telefono": 2235888222,
       "email": "cfulanito@gmail.com",
-      "contraseña": "fulanito",
+      "contrasenia": "fulanito",
       "datosVivienda": {
         "integrantes": 5,
         "ninios": true,
@@ -173,5 +173,112 @@
       }
     }
   ],
-  "animales": []
+  "animales": [
+    {
+      "id": 1,
+      "estado": "PENDIENTE",
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg"
+      ],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 2,
+      "estado": "PENDIENTE",
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg"
+      ],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 3,
+      "estado": "PENDIENTE",
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg"
+      ],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 4,
+      "estado": "TRANSITO",
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg"
+      ],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 5,
+      "estado": "PENDIENTE",
+      "imagenes": [
+        "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      ],
+      "nombre": "SHIVA4",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 6,
+      "estado": "ADOPTADO",
+      "imagenes": [
+        "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      ],
+      "nombre": "SHIVA5",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 7,
+      "estado": "PENDIENTE",
+      "imagenes": [
+        "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      ],
+      "nombre": "SHIVA6",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 8,
+      "estado": "ADOPTADO",
+      "imagenes": [
+        "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      ],
+      "nombre": "SHIVA7",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 9,
+      "estado": "TRANSITO",
+      "imagenes": [
+        "../../../assets/img/img-login.png",
+        "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      ],
+      "nombre": "SHIVA8",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 10,
+      "estado": "PENDIENTE",
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg"
+      ],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 11,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "SIMONA",
+      "especie": "GATO",
+      "sexo": "HEMBRA",
+      "tamanio": "CHICO",
+      "edad": 1,
+      "descripcion": "Gata rescatada de una casilla en el monte. Aproximadamente 1 año , ya esta castrada",
+      "compatibilidad": [],
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg"
+      ]
+    }
+  ]
 }
