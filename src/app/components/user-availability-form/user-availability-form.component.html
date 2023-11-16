@@ -1,0 +1,39 @@
+<section class="seccion">
+    <fieldset class="camp">
+        <legend id="encabezado">Disponibilidad</legend>
+        <form id="formulario" (ngSubmit)="addDis()" [formGroup]="formularioDis">
+            <div class="campo">
+                <label for="startDate">Fecha desde: </label>
+                <input type="date" id="date" formControlName="startDate"> 
+            </div>
+            <div class="campo"> 
+                <label for="endDate">Fecha hasta: </label>
+                <input type="date" id="date" formControlName="endDate">
+            </div>
+
+            <div class="campo">
+                <label for="size">Tamaño</label>
+                <select formControlName="size">
+                    <option value="chico" >CHICO</option>
+                    <option value="mediano" >MEDIANO</option>
+                    <option value="grande">GRANDE</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="especie">Especie</label>
+                <select formControlName="especie">
+                    <option value="perro" selected>Perro</option>
+                    <option value="gato" >Gato</option>
+                </select>
+            </div>
+
+
+            <div class="campo">
+                <input type="submit" value="Guardar Disponibilidad">
+            </div>          
+           
+        </form>
+
+    </fieldset>
+</section>
