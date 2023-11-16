@@ -44,6 +44,65 @@
     }
   ],
   "animales": [
-    
+    {
+      "estado": "PENDIENTE",
+      "imagenes": ["../../../assets/img/SIMONA_1.jpg"],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+    "estado": "PENDIENTE",
+      "imagenes": ["../../../assets/img/SIMONA_1.jpg"],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "PENDIENTE",
+      "imagenes": ["../../../assets/img/SIMONA_1.jpg"],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "TRANSITO",
+      "imagenes": ["../../../assets/img/SIMONA_1.jpg"],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "PENDIENTE",
+      "imagenes": ["https://material.angular.io/assets/img/examples/shiba2.jpg"],
+      "nombre": "SHIVA4",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "ADOPTADO",
+      "imagenes": ["https://material.angular.io/assets/img/examples/shiba2.jpg"],
+      "nombre": "SHIVA5",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "PENDIENTE",
+      "imagenes": ["https://material.angular.io/assets/img/examples/shiba2.jpg"],
+      "nombre": "SHIVA6",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "ADOPTADO",
+      "imagenes": ["https://material.angular.io/assets/img/examples/shiba2.jpg"],
+      "nombre": "SHIVA7",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "TRANSITO",
+      "imagenes": ["../../../assets/img/img-login.png", "https://material.angular.io/assets/img/examples/shiba2.jpg"],
+      "nombre": "SHIVA8",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "estado": "PENDIENTE",
+      "imagenes": ["../../../assets/img/SIMONA_1.jpg"],
+      "nombre": "SIMONA",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    }    
   ]
 }

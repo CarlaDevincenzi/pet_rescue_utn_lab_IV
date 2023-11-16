@@ -20,6 +20,10 @@ import {HttpClientModule}  from '@angular/common/http';
 import { UserHomePageComponent } from './pages/user-home-page/user-home-page.component';
 import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.component';
 import { AnimalRegistrationFormComponent } from './components/animal-registration-form/animal-registration-form.component';
+import { CardComponent } from './components/card/card.component';
+import { ListAnimalComponent } from './components/list-animal/list-animal.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import { AnimalRegistrationFormComponent } from './components/animal-registratio
     LoginPageComponent,
     UserHomePageComponent,
     AdminHomePageComponent,
-    AnimalRegistrationFormComponent
+    AnimalRegistrationFormComponent,    
+    CardComponent,
+    ListAnimalComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

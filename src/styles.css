@@ -36,3 +36,10 @@ body {
 header hr{
     border: .5px solid #e1e1e1;
 }
+
+.component-container {
+    max-width: 1300px; /* Establece el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding: 20px; /* Ajusta el relleno según tus necesidades */
+    box-sizing: border-box; /* Asegura que el relleno y el borde se incluyan en el ancho máximo */
+  }
