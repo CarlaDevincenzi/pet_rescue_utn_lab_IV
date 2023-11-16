@@ -13,7 +13,7 @@ export class User{
     domicilio: Domicilio = new Domicilio();
     telefono: number=0;
     email: string='';
-    contraseña: string='';
+    contrasenia: string='';
     datosVivienda: Vivienda = new Vivienda();
     disponibilidad: Disponibilidad = new Disponibilidad();
        
