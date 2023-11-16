@@ -21,6 +21,7 @@ import { UserHomePageComponent } from './pages/user-home-page/user-home-page.com
 import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.component';
 import { AnimalRegistrationFormComponent } from './components/animal-registration-form/animal-registration-form.component';
 import { RegistrationPageComponent } from './pages/registration-page/registration-page.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RegistrationPageComponent } from './pages/registration-page/registratio
     UserHomePageComponent,
     AdminHomePageComponent,
     AnimalRegistrationFormComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
