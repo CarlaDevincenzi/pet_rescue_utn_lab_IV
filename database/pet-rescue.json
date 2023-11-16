@@ -1,7 +1,7 @@
 {
   "usuarios": [
     {
-      "idUsuario": 1,
+      "id": 1,
       "tipo": [
         "ADMIN"
       ],
@@ -9,7 +9,7 @@
       "contraseña": "admin123"
     },
     {
-      "idUsuario": 2,
+      "id": 2,
       "tipo": [
         "TRANSITO"
       ],
@@ -39,11 +39,139 @@
         "startDate": "",
         "endDate": "",
         "size": "",
-        "especie": ""       
+        "especie": ""
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-15T23:11:24.102Z",
+      "id": 3,
+      "tipo": [],
+      "dni": 31821264,
+      "apellido": "dfdffffffff",
+      "nombre": "",
+      "domicilio": {
+        "calle": "",
+        "numero": "",
+        "piso": "",
+        "departamento": "",
+        "codigoPostal": ""
+      },
+      "telefono": "",
+      "email": "dff@dwdw",
+      "contrasenia": "",
+      "datosVivienda": {
+        "integrantes": "",
+        "ninios": "",
+        "mascota": "",
+        "tipoVivienda": "",
+        "ambientes": "",
+        "patio": ""
+      },
+      "disponibilidad": {
+        "startDate": "2023-11-15",
+        "endDate": "2023-12-09",
+        "size": "",
+        "especie": ""
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T00:52:33.884Z",
+      "id": 4,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 3332323,
+      "apellido": "gomez",
+      "nombre": "carlos",
+      "domicilio": {
+        "calle": "peña",
+        "numero": 37747,
+        "piso": "3",
+        "departamento": "2",
+        "codigoPostal": 7600
+      },
+      "telefono": 154478896,
+      "email": "carlos@gail",
+      "contrasenia": "ggddtteee3",
+      "datosVivienda": {
+        "integrantes": 4,
+        "ninios": true,
+        "mascota": true,
+        "tipoVivienda": "CASA",
+        "ambientes": 4,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "2023-11-23",
+        "endDate": "2023-11-30",
+        "size": "mediano",
+        "especie": "gato"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T01:02:29.026Z",
+      "id": 5,
+      "tipo": [],
+      "dni": 455355332,
+      "apellido": "rruuw",
+      "nombre": "dchdsgs",
+      "domicilio": {
+        "calle": "hdahdgy",
+        "numero": 67732,
+        "piso": "3",
+        "departamento": "a",
+        "codigoPostal": 7600
+      },
+      "telefono": 3726686,
+      "email": "dnsaji@djao",
+      "contrasenia": "dhshdiaiu",
+      "datosVivienda": {
+        "integrantes": 4,
+        "ninios": true,
+        "mascota": true,
+        "tipoVivienda": "CASA",
+        "ambientes": 3,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "",
+        "especie": ""
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T01:06:27.163Z",
+      "id": 6,
+      "tipo": [],
+      "dni": 76675676576,
+      "apellido": "fernandez",
+      "nombre": "olga",
+      "domicilio": {
+        "calle": "iiwueudy",
+        "numero": 589,
+        "piso": "2",
+        "departamento": "b",
+        "codigoPostal": 7600
+      },
+      "telefono": 552255485,
+      "email": "dsjdsj@ndjd",
+      "contrasenia": "55884sss",
+      "datosVivienda": {
+        "integrantes": 4,
+        "ninios": true,
+        "mascota": true,
+        "tipoVivienda": "DEPARTAMENTO",
+        "ambientes": 4,
+        "patio": false
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "",
+        "especie": ""
       }
     }
   ],
-  "animales": [
-    
-  ]
+  "animales": []
 }

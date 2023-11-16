@@ -3,31 +3,66 @@
         <legend id="encabezado">Nuevo Usuario</legend>
 
         <form  id="formulario" (ngSubmit)="submit()" [formGroup]="formulario">
-            <div>
+        
             <div class="campo">
                 <label for="dni">DNI:</label >
                 <input type="number" id="dni" formControlName="dni" >
   
             </div>
+    
             <div class="row" *ngIf="!formulario.get('dni')?.valid && (formulario.get('dni')?.dirty || formulario.get('dni')?.touched)"
-            class="col-lg-12">
-                <small class="alert alert-danger" role="alert" *ngIf="formulario.get('dni')?.errors?.['required']">
-                    El DNI es obligatorio
-                </small>
-                <div *ngIf="formulario.get('dni')?.hasError('dniExists')">
-                    El DNI ya existe.
-                </div>
-            </div> 
+                 class="col-lg-12">
+                <div class="alert alert-danger"  >
+                    <small  *ngIf="formulario.get('dni')?.errors?.['required']">
+                        El DNI es obligatorio
+                    </small>
+                    <small  *ngIf="formulario.get('dni')?.hasError('dniExists')">
+                        El DNI ya existe.
+                    </small>
+                </div>     
+            </div>
+            
             <br>
+            
             <div class="campo">
                 <label for="apellido">Apellido: </label>
-                <input type="text" id="apellido" formControlName="apellido" required>
+                <input type="text" id="apellido" formControlName="apellido">
 
-            </div><br>
+            </div>
+            <div class="row" *ngIf="!formulario.get('apellido')?.valid && (formulario.get('apellido')?.dirty || formulario.get('apellido')?.touched)"
+                 class="col-lg-12">
+                <div class="alert alert-danger"  >
+                    <small  *ngIf="formulario.get('apellido')?.errors?.['required']">
+                       El apellido es obligatorio
+                    </small>
+                    <small  *ngIf="formulario.get('apellido')?.errors?.['minlength']">
+                        Debe contener minimo 3 letras
+                    </small>
+                    <small  *ngIf="formulario.get('apellido')?.errors?.['pattern']">
+                        Debe ingresar solo letras
+                    </small>
+                </div>     
+            </div>
+            <br>
             <div class="campo">
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" formControlName="nombre">
-            </div><br>
+            </div>
+            <div class="row" *ngIf="!formulario.get('nombre')?.valid && (formulario.get('nombre')?.dirty || formulario.get('nombre')?.touched)"
+            class="col-lg-12">
+           <div class="alert alert-danger"  >
+               <small  *ngIf="formulario.get('nombre')?.errors?.['required']">
+                  El apellido es obligatorio
+               </small>
+               <small  *ngIf="formulario.get('nombre')?.errors?.['minlength']">
+                   El nombre debe contener mas de 3 letras
+               </small>
+               <small  *ngIf="formulario.get('nombre')?.errors?.['pattern']">
+                Debe ingresar solo letras
+            </small>
+           </div>     
+       </div>
+            <br>
             <div class="campo">
                 <label for="calle">Calle: </label>
                 <input type="text" id="calle" formControlName="calle">
@@ -79,9 +114,9 @@
                 <input type="number" id="integrantes"  formControlName="integrantes">
             </div><br>
             <div class="campo">
-                <label for="niños">Niños: </label>
-                <input type="radio"  value= "true" formControlName="niños">Si 
-                <input type="radio"  value= "false" formControlName="niños">No
+                <label for="ninios">Niños: </label>
+                <input type="radio"  value= "true" formControlName="ninios">Si 
+                <input type="radio"  value= "false" formControlName="ninios">No
               
             </div><br>
             <div class="campo">
@@ -89,7 +124,7 @@
                 <input type="radio"  value="true"  formControlName="mascota">Si
                 <input type="radio"  value="false"  formControlName="mascota">No 
             </div><br>
-            <div class="campo">
+            <div  *ngIf="tieneMascota"class="campo">
                 <label for="especificacion">En caso afirmativo especificar</label>
                 <input type="text"  formControlName="especificacion">
             </div>  <br>
@@ -122,21 +157,40 @@
             </div><br>
 
             <div *ngIf="mostrarComponenteDisponibilidad">
-                <app-user-availability-form></app-user-availability-form>
-            </div>
     
+                <legend id="encabezado">Disponibilidad 
+                    <small> (En caso de ser necesario)</small>
+                </legend>
+                    <div class="campo">
+                        <label for="startDate">Fecha desde: </label>
+                        <input type="date" id="date" formControlName="startDate"> 
+                    </div>
+                    <div class="campo"> 
+                        <label for="endDate">Fecha hasta: </label>
+                        <input type="date" id="date2" formControlName="endDate">
+                    </div>
+        
+                    <div class="campo">
+                        <label for="size">Tamaño</label>
+                        <select formControlName="size">
+                            <option value="chico" >CHICO</option>
+                            <option value="mediano" >MEDIANO</option>
+                            <option value="grande">GRANDE</option>
+                        </select>
+                    </div>
+        
+                    <div class="campo">
+                        <label for="especie">Especie</label>
+                        <select formControlName="especie">
+                            <option value="perro" selected>Perro</option>
+                            <option value="gato" >Gato</option>
+                        </select>
+                    </div>
+                
+            </div>
             <div class="campo">
                 <input type="submit" value="Crear Usuario">
-            </div><br>
-
-            
-
-            
-
-            
-                
-
-        </div>    
+            </div><br>  
             
         </form>
     </fieldset>

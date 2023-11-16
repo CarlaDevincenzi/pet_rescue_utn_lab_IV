@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup,Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 import { debounceTime } from 'rxjs';
 import { CustomValidator } from 'src/app/common/customValidator';
 import { User } from 'src/app/models/user';
@@ -14,41 +15,54 @@ import { UserService } from 'src/app/sevices/user.service';
 export class UserRegistrationFormComponent  {
   message: string = '';
   mostrarComponenteDisponibilidad: boolean = false;
+  tieneMascota: boolean = false;
   formulario: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private userService: UserService ){
+  constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router ){
+
     this.formulario = this.formBuilder.group({
       dni: new FormControl('',
-      [Validators.required, Validators.minLength(6), CustomValidator.asyncDniExists(this.userService)]),
-      apellido: new FormControl('', [ Validators.required, Validators.minLength(3)]),
-      nombre:new FormControl(''),
-      calle:new FormControl(''),
-      numero:new FormControl(''),
-      piso:new FormControl(''),
+      [Validators.required,Validators.pattern('^[0-9]+$')], CustomValidator.asyncDniExists(userService)),
+      apellido: new FormControl('', [ Validators.required, Validators.minLength(3), Validators.pattern(/^[a-zA-Z]+$/)]),
+      nombre:new FormControl('', [Validators.required, Validators.pattern(/^[a-zA-Z]+$/)]),
+      calle:new FormControl('', [Validators.required]),
+      numero:new FormControl('',[Validators.required, Validators.pattern('^[0-9]+$')]),
+      piso:new FormControl('', [Validators.pattern('^[0-9]+$')]),
       departamento: new FormControl(''),
-      codigoPostal:new FormControl(''),
-      telefono:new FormControl(''),
+      codigoPostal:new FormControl('',[Validators.required, Validators.pattern('^[0-9]+$')]),
+      telefono:new FormControl('',[Validators.required, Validators.pattern('^[0-9]+$')]),
       email:new FormControl('',[Validators.required, Validators.email]),
-      password:new FormControl(''),
-      integrantes:new FormControl(''),
-      niños:new FormControl(''),
-      mascota:new FormControl(''),
-      especificacion:new FormControl(''),
-      tipoVivienda:new FormControl(''),
-      ambientes:new FormControl(''),
-      patio:new FormControl(''),
-      transito: new FormControl('')
+      password:new FormControl('',[Validators.required, Validators.minLength(4)]),
+      integrantes:new FormControl('',[Validators.required, Validators.pattern('^[0-9]+$')]),
+      ninios:new FormControl('',[Validators.required]),
+      mascota:new FormControl('',[Validators.required]),
+      especificacion:new FormControl('',[Validators.required]),
+      tipoVivienda:new FormControl('',[Validators.required]),
+      ambientes:new FormControl('',[Validators.required]),
+      patio:new FormControl('',[Validators.required]),
+      transito: new FormControl('',[Validators.required]),
+      startDate:new FormControl(''),
+      endDate:new FormControl(''),
+      size:new FormControl(''),
+      especie:new FormControl(''),
+
     })
 
-    this.formulario.get('dni')?.valueChanges.pipe(debounceTime(300)) // Ajusta el tiempo de espera según tus necesidades
-    .subscribe(() => {
-      this.formulario.get('dni')?.updateValueAndValidity();
-    });
+    
 
       this.formulario.get('transito')?.valueChanges.subscribe((valor)=> {
-        if(valor) {
+        if(valor === "true") {
           this.mostrarComponenteDisponibilidad = true;
-        }        
+        } else {
+          this.mostrarComponenteDisponibilidad = false;
+        }       
+      });
+      this.formulario.get('mascota')?.valueChanges.subscribe((valor)=> {
+        if(valor === "true") {
+          this.tieneMascota = true;
+        } else {
+          this.tieneMascota = false;
+        }      
       });
   } 
   
@@ -65,13 +79,17 @@ export class UserRegistrationFormComponent  {
   get email() {return this.formulario.get('email')}
   get password() {return this.formulario.get('password')}
   get integrantes() {return this.formulario.get('integrantes')}
-  get niños() { return this.formulario.get('niños')}
+  get ninios() { return this.formulario.get('ninios')}
   get mascota() {return this.formulario.get('mascota')}
   get especificaciones() {return this.formulario.get('especificaciones')}
   get tipoVivienda() {return this.formulario.get('tipoVivienda')}
   get ambientes() {return this.formulario.get('ambientes')}
   get patio() {return this.formulario.get('patio')}
-  get transito() {return this.formulario.get('transito')}    
+  get transito() {return this.formulario.get('transito')}   
+  get startDate() {return this.formulario.get('startDate')} 
+  get endDate() {return this.formulario.get('endDate')} 
+  get size() {return this.formulario.get('size')} 
+  get especie() {return this.formulario.get('especie')}  
   
   ngOnInit():void{}
   
@@ -93,17 +111,24 @@ export class UserRegistrationFormComponent  {
       user.datosVivienda.ambientes = this.ambientes?.value;
       user.datosVivienda.integrantes = this.integrantes?.value;
       user.datosVivienda.tipoVivienda = this.tipoVivienda?.value;
-      user.datosVivienda.mascota = this.mascota?.value;
-      user.datosVivienda.ninios = this.niños?.value;
+      user.datosVivienda.ninios = (this.ninios?.value === "true") ? true : false
+      user.datosVivienda.mascota = (this.mascota?.value === "true") ? true : false
       user.datosVivienda.especificacion = this.especificaciones?.value;
-      user.datosVivienda.patio = this.patio?.value;
-      
+      user.datosVivienda.patio = (this.patio?.value === "true") ? true : false
+      user.disponibilidad.startDate = this.startDate?.value;
+      user.disponibilidad.endDate = this.endDate?.value;
+      user.disponibilidad.size = this.size?.value;
+      user.disponibilidad.especie = this.especie?.value;
+
+      if(this.transito?.value === "true"){
+          user.tipo.push("TRANSITO");
+      }
 
       this.userService.createUser(user).subscribe({
         next: (response) => {
           console.log(response)
           this.formulario.reset();
-          // this.router.navigateByUrl("") Implementar a donde va
+          this.router.navigateByUrl("/login")
         },
         error: err => alert(err)
       })         
