@@ -25,6 +25,7 @@ import { CardComponent } from './components/card/card.component';
 import { ListAnimalComponent } from './components/list-animal/list-animal.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     RegistrationPageComponent,    
     CardComponent,
     ListAnimalComponent,
-    HomePageComponent
+    HomePageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -60,9 +60,12 @@ export class UserRegistrationFormComponent  {
       this.formulario.get('mascota')?.valueChanges.subscribe((valor)=> {
         if(valor === "true") {
           this.tieneMascota = true;
+          this.formulario.get('especificacion')?.setValidators(Validators.required);
         } else {
           this.tieneMascota = false;
-        }      
+          this.formulario.get('especificacion')?.clearValidators();
+        }
+        this.formulario.get('especificacion')?.updateValueAndValidity();      
       });
   } 
   
@@ -135,12 +138,7 @@ export class UserRegistrationFormComponent  {
   } else {
       this.formulario.markAllAsTouched();        
   }   
-
-  //   // if (this.formulario.status)
-  //   // alert("debe completar todos los campos")
-  // else
-  //   console.log(this.user)
-  }
   
+  }  
 
 }
