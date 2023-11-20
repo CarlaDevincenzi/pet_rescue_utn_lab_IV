@@ -24,8 +24,8 @@ import { RegistrationPageComponent } from './pages/registration-page/registratio
 import { CardComponent } from './components/card/card.component';
 import { ListAnimalComponent } from './components/list-animal/list-animal.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     CardComponent,
     ListAnimalComponent,
     HomePageComponent,
-    NavbarComponent
+    NavbarComponent       
   ],
   imports: [
     BrowserModule,
@@ -55,7 +55,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

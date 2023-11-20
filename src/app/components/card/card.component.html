@@ -1,10 +1,44 @@
 <div class="card" >
-    <img [src]="img_src" class="card-img-top" style="height:25rem" alt="...">
+    <img [src]="animal.imagenes[0]" class="card-img-top" style="height:25rem" alt="...">
     <div class="card-body">
-      <h4 class="card-title">{{ title }}</h4>
-      <p class="card-text">{{ short_description }}</p>
-       <div class="button-position">
-        <button class="btn btn-primary px-4" (click)="verMas()">VER MAS</button>
-       </div>            
+      <h4 class="card-title">{{ animal.nombre }}</h4>
+      <p class="card-text">{{ animal.descripcion.substring(0, 100).concat(' ...') }}</p>      
+       
+      <div class="button-position">
+        <button class="btn btn-primary px-4" (click)="abrirModal()">VER MAS</button>            
+       </div>
+
+       <div class="modal fade" [id]="'modal-' + animal.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" #myModal>
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="staticBackdropLabel">{{ animal.nombre }}</h2>
+              <button type="button" class="btn-close" (click)="cerrarModal()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let item of animal.imagenes">
+                  <img [src]="item" class="d-block w-100" style="height: 40rem;" alt="...">
+                </ng-template>
+              </ngb-carousel>
+              <p> Estado: {{ animal.estado }}</p>
+              <p> Publicado en fecha: {{ animal.fechaRegistro }}</p>
+              <p> Especie: {{ animal.especie }}</p>
+              <p> Sexo: {{ animal.sexo }}</p>
+              <p> Tamaño: {{ animal.tamanio }}</p>
+              <p> Edad (aproximada en años): {{ animal.edad }}</p>
+              <ng-container  *ngIf="animal.compatibilidad.length > 0">
+                <p > Compatible con: {{ animal.compatibilidad }}</p>
+              </ng-container>              
+              <p>{{ animal.descripcion }}</p>
+            </div>
+            <div class="modal-footer">          
+              <button type="button" class="btn btn-primary">¡ADOPTAR!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                    
     </div>
 </div>

@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Animal } from 'src/app/models/animal';
+
 
 @Component({
   selector: 'app-card',
@@ -6,12 +8,19 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  @Input() img_src!: string;
-  @Input() title!: string;
-  @Input() short_description!: string;
+  @Input() animal!: Animal;
+  @ViewChild('myModal') modal!: ElementRef;
+  
+  abrirModal(){
+    this.modal.nativeElement.classList.add('show');
+    this.modal.nativeElement.style.display = 'block';
+  }
 
-  verMas() {
-    // TODO: Aca va la logica para mostrar un modal con la ficha completa del animal, y el boton de adoptar
-    alert("Elegiste este animalito");
+  cerrarModal() {
+    // Cierra el modal
+    this.modal.nativeElement.classList.remove('show');
+    this.modal.nativeElement.style.display = 'none';
   }
 }
+
+
