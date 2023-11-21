@@ -344,6 +344,7 @@
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SIMONA",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -353,6 +354,7 @@
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SIMONA",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -362,6 +364,7 @@
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SIMONA",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -371,6 +374,7 @@
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SIMONA",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -380,6 +384,7 @@
       "imagenes": [
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
+      "compatibilidad": ["PERROS", "GATOS"],
       "nombre": "SHIVA4",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -389,6 +394,7 @@
       "imagenes": [
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SHIVA5",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -398,6 +404,7 @@
       "imagenes": [
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
+      "compatibilidad": ["NIÑOS"],
       "nombre": "SHIVA6",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -407,6 +414,7 @@
       "imagenes": [
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SHIVA7",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -417,6 +425,7 @@
         "../../../assets/img/img-login.png",
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
+      "compatibilidad": ["PERROS"],
       "nombre": "SHIVA8",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -426,6 +435,7 @@
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ],
+      "compatibilidad": [],
       "nombre": "SIMONA",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -439,7 +449,7 @@
       "tamanio": "CHICO",
       "edad": 1,
       "descripcion": "Gata rescatada de una casilla en el monte. Aproximadamente 1 año , ya esta castrada",
-      "compatibilidad": [],
+      "compatibilidad": ["NIÑOS", "PERROS"],
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ]
