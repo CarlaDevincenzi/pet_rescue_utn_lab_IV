@@ -1,7 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup,Validators} from '@angular/forms';
 import { Router } from '@angular/router';
-import { debounceTime } from 'rxjs';
 import { CustomValidator } from 'src/app/common/customValidator';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/sevices/user.service';
@@ -43,8 +42,8 @@ export class UserRegistrationFormComponent  {
       transito: new FormControl('',[Validators.required]),
       startDate:new FormControl(''),
       endDate:new FormControl(''),
-      size:new FormControl(''),
-      especie:new FormControl(''),
+      size:new FormControl('INDISTINTO'),
+      especie:new FormControl('INDISTINTO'),
 
     })
 

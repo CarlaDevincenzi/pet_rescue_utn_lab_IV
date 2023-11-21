@@ -303,6 +303,38 @@
         "size": "",
         "especie": ""
       }
+    },
+    {
+      "fechaRegistro": "2023-11-17T23:01:23.236Z",
+      "id": 11,
+      "tipo": [],
+      "dni": 31821266,
+      "apellido": "fdjfjdsjk",
+      "nombre": "jcdsbhjk",
+      "domicilio": {
+        "calle": "jcdkkhj",
+        "numero": 43,
+        "piso": "",
+        "departamento": "",
+        "codigoPostal": 7600
+      },
+      "telefono": 36436,
+      "email": "matiass17@hotmail.com",
+      "contrasenia": "shksghkj",
+      "datosVivienda": {
+        "integrantes": 2,
+        "ninios": false,
+        "mascota": false,
+        "tipoVivienda": "DEPARTAMENTO",
+        "ambientes": 5,
+        "patio": false
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "",
+        "especie": ""
+      }
     }
   ],
   "animales": [

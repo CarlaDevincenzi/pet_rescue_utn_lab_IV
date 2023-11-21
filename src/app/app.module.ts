@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserRegistrationFormComponent } from './components/user-registration-form/user-registration-form.component';
-import { UserAvailabilityFormComponent } from './components/user-availability-form/user-availability-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormFieldAppearanceComponent } from './components/shared/form-field-appearance/form-field-appearance.component';
 import {MatIconModule} from '@angular/material/icon';
@@ -31,7 +30,6 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
   declarations: [
     AppComponent,
     UserRegistrationFormComponent,
-    UserAvailabilityFormComponent,
     FormFieldAppearanceComponent,
     FormFieldPasswordViewComponent,
     LoginComponent,
