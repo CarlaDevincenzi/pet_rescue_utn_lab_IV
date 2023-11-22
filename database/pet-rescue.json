@@ -432,7 +432,7 @@
     {
       "id": 6,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "ADOPTADO",
+      "estado": "TRANSITO",
       "nombre": "CAMBIAR",
       "especie": "PERRO",
       "sexo": "MACHO",
@@ -472,7 +472,7 @@
     {
       "id": 8,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "ADOPTADO",
+      "estado": "TRANSITO",
       "nombre": "CAMBIAR",
       "especie": "PERRO",
       "sexo": "MACHO",
@@ -492,7 +492,7 @@
     {
       "id": 9,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "PENDIENTE",
+      "estado": "TRANSITO",
       "nombre": "CAMBIAR",
       "especie": "PERRO",
       "sexo": "MACHO",
@@ -604,21 +604,24 @@
       "estado": "PENDIENTE",
       "idUser": 2,
       "idAnimal": 11,
-      "id": 1
+      "id": 1,
+      "motivo": ""
     },
     {
       "fechaSolicitud": "2023-11-21T00:57:09.098Z",
       "estado": "PENDIENTE",
       "idUser": 2,
       "idAnimal": 10,
-      "id": 2
+      "id": 2,
+      "motivo": ""
     },
     {
       "fechaSolicitud": "2023-11-21T23:51:35.174Z",
       "estado": "PENDIENTE",
       "idUser": 2,
       "idAnimal": 9,
-      "id": 3
+      "id": 3,
+      "motivo": ""
     }
   ]
 }

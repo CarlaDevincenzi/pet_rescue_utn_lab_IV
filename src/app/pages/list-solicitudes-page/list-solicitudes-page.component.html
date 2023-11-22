@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div class="component-container">
-    <h2 class="title-solicitud">SOLICITUDES DE ADOPCION</h2>    
+    <h2 class="title-solicitud">SOLICITUDES DE ADOPCION</h2>       
     <div class="accordion" id="accordionExample">
         <div *ngFor="let item of solicitudesPendientes; let i = index" class="accordion-item">
           <h2 class="accordion-header" [attr.id]="'heading' + (i + 1)">
@@ -11,8 +11,22 @@
                     [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
                     [attr.aria-controls]="'collapse' + (i + 1)"
                     (click)="verDatos(item.idAnimal, item.idUser)">
-              <h3>FECHA: {{ item.fechaSolicitud }}</h3>
-              
+                    <div>
+                        <h3>FECHA: {{ item.fechaSolicitud }}</h3>
+                        <button class="btn btn-primary" (click)="aceptarAdopcion(item)">ACEPTAR</button>
+                        <button class="btn btn-danger" (click)="rechazarAdopcion()">RECHAZAR</button>
+                        <div *ngIf="rechazo">
+                            <form  id="formulario" (ngSubmit)="submit(item)" [formGroup]="formulario">
+                                <div class="campo">
+                                    <label for="dni">Motivo rechazo:</label >
+                                    <input type="text" formControlName="motivo">
+                                </div>                                
+                                <div class="campo">
+                                    <input type="submit" class="btn btn-warning" value="Enviar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>              
             </button>
           </h2>
           <div [id]="'collapse' + (i + 1)"
@@ -23,43 +37,42 @@
             <div class="accordion-body">
                 <strong>Mascota solicitada:</strong>
                 <div>
-                    <p>Nombre: {{ animal.nombre }}</p>
-                    <p>Estado: {{ animal.estado }}</p>
-                    <p>Especie: {{ animal.especie }}</p>
-                    <p>Sexo: {{ animal.sexo }}</p>
-                    <p>Tamaño: {{ animal.tamanio }}</p>
-                    <p>Edad aproximada: {{ animal.edad }}</p>
-                    <p>Descripcion: {{ animal.descripcion }}</p>
-                    <p>Compatibilidad: {{ animal.compatibilidad }}</p>
-                    <div class="image-container" *ngFor="let item of animal.imagenes">
+                    <p>Nombre: {{ animal?.nombre }}</p>
+                    <p>Estado: {{ animal?.estado }}</p>
+                    <p>Especie: {{ animal?.especie }}</p>
+                    <p>Sexo: {{ animal?.sexo }}</p>
+                    <p>Tamaño: {{ animal?.tamanio }}</p>
+                    <p>Edad aproximada: {{ animal?.edad }}</p>
+                    <p>Descripcion: {{ animal?.descripcion }}</p>
+                    <p>Compatibilidad: {{ animal?.compatibilidad }}</p>
+                    <div class="image-container" *ngFor="let item of animal?.imagenes">
                         <img [src]="item" style="width: 150px; height:15rem">
                     </div>                    
                 </div>
                 <br/>
                 <strong>Usuario solicitante:</strong>
                 <div>
-                    <p>Nombre completo: {{ usuario.nombre }} {{ usuario.apellido }}</p>
-                    <p>DNI: {{ usuario.dni }}</p>
-                    <p>Domicilio: {{ usuario.domicilio.calle }} {{ usuario.domicilio.numero }}, piso: {{ usuario.domicilio.piso }}, depto: {{ usuario.domicilio.departamento }}, Codigo Postal: {{ usuario.domicilio.codigoPostal }}</p>
-                    <p>Telefono: {{ usuario.telefono }}</p>
-                    <p>Email: {{ usuario.email }}</p>
+                    <p>Nombre completo: {{ usuario?.nombre }} {{ usuario?.apellido }}</p>
+                    <p>DNI: {{ usuario?.dni }}</p>
+                    <p>Domicilio: {{ usuario?.domicilio?.calle }} {{ usuario?.domicilio?.numero }}, piso: {{ usuario?.domicilio?.piso }}, depto: {{ usuario?.domicilio?.departamento }}, Codigo Postal: {{ usuario?.domicilio?.codigoPostal }}</p>
+                    <p>Telefono: {{ usuario?.telefono }}</p>
+                    <p>Email: {{ usuario?.email }}</p>
                     <div>VIVIENDA: 
-                        <p>Cantidad integrantes: {{ usuario.datosVivienda.integrantes }}</p>
-                        <p>Ambientes{{ usuario.datosVivienda.ambientes }}</p>
-                        <p>Tipo vivienda: {{ usuario.datosVivienda.tipoVivienda }}</p>
-                        <p *ngIf="usuario.datosVivienda.ninios">Tiene niños: SI</p>
-                        <p *ngIf="!usuario.datosVivienda.ninios">Tiene niños: NO</p>
-                        <p *ngIf="usuario.datosVivienda.mascota">Mascotas: SI</p>
-                        <p *ngIf="usuario.datosVivienda.mascota">Cuales: {{ usuario.datosVivienda.especificacion }}</p>
-                        <p *ngIf="!usuario.datosVivienda.mascota">Mascotas: NO</p>
-                        <p *ngIf="usuario.datosVivienda.patio">Tiene patio: SI</p>
-                        <p *ngIf="!usuario.datosVivienda.patio">Tiene patio: NO</p>                         
+                        <p>Cantidad integrantes: {{ usuario?.datosVivienda?.integrantes }}</p>
+                        <p>Ambientes{{ usuario?.datosVivienda?.ambientes }}</p>
+                        <p>Tipo vivienda: {{ usuario?.datosVivienda?.tipoVivienda }}</p>
+                        <p *ngIf="usuario?.datosVivienda?.ninios">Tiene niños: SI</p>
+                        <p *ngIf="!usuario?.datosVivienda?.ninios">Tiene niños: NO</p>
+                        <p *ngIf="usuario?.datosVivienda?.mascota">Mascotas: SI</p>
+                        <p *ngIf="usuario?.datosVivienda?.mascota">Cuales: {{ usuario?.datosVivienda?.especificacion }}</p>
+                        <p *ngIf="!usuario?.datosVivienda?.mascota">Mascotas: NO</p>
+                        <p *ngIf="usuario?.datosVivienda?.patio">Tiene patio: SI</p>
+                        <p *ngIf="!usuario?.datosVivienda?.patio">Tiene patio: NO</p>                         
                     </div>                                       
                 </div>
             </div>
           </div>
-          <button class="btn btn-primary">ACEPTAR</button>
-          <button class="btn btn-danger">RECHAZAR</button>
+          
         </div>
     </div>
 </div>

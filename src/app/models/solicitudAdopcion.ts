@@ -3,6 +3,7 @@ export class SolicitudAdopcion {
     idUser!:number;
     idAnimal!:number;
     fechaSolicitud: Date = new Date();
-    estado:string = "PENDIENTE" // (aprobado/cancelado/pendiente)
+    estado:string = "PENDIENTE" // (aprobada/cancelada/pendiente)
+    motivo:string = '';
 }
 
