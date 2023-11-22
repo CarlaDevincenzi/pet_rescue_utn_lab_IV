@@ -12,10 +12,7 @@
       "id": 2,
       "tipo": [
         "TRANSITO",
-        "ADOPTANTE",
-        "ADOPTANTE",
-        "ADOPTANTE",
-        "ADOPTANTE"
+        "ADOPTANTE"        
       ],
       "dni": 25987456,
       "apellido": "Fulanito",

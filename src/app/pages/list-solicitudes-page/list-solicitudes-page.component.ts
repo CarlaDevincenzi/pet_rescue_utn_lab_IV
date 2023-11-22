@@ -69,7 +69,10 @@ export class ListSolicitudesPageComponent {
       });
       
       if(this.usuario !=null){
-        this.usuario.tipo.push('ADOPTANTE') ;
+        if(!this.usuario.tipo.includes('ADOPTANTE')){
+           this.usuario.tipo.push('ADOPTANTE') ;
+        }
+        
         this.userService.updateUser(this.usuario).subscribe({
           next: (response) => {        
             console.log(response);
