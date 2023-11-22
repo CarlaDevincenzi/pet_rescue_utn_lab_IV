@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Injectable({
@@ -7,12 +8,14 @@ import { Injectable } from '@angular/core';
 export class SessionService {
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 
   /* Cierre de sesion */
   logOut(){
     localStorage.clear();
+    this.router.navigateByUrl("/home");
+    window.location.reload();
   }
 
 
