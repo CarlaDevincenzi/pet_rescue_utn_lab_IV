@@ -14,7 +14,7 @@ export class NavbarComponent {
   userType = this.session.getTipoUsuarioLogueado(); 
 
   cerrarSesion(){
-    this.session.logOut();
+    this.session.logOut();    
   }
 
 }

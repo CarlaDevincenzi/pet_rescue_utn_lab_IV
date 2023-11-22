@@ -11,7 +11,8 @@
     {
       "id": 2,
       "tipo": [
-        "TRANSITO"
+        "TRANSITO",
+        "ADOPTANTE"        
       ],
       "dni": 25987456,
       "apellido": "Fulanito",
@@ -376,7 +377,7 @@
     {
       "id": 3,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "TRANSITO",
+      "estado": "ADOPTADO",
       "nombre": "LIDIA",
       "especie": "GATO",
       "sexo": "HEMBRA",
@@ -492,7 +493,7 @@
     {
       "id": 9,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "TRANSITO",
+      "estado": "ADOPTADO",
       "nombre": "CAMBIAR",
       "especie": "PERRO",
       "sexo": "MACHO",
@@ -532,7 +533,7 @@
     {
       "id": 11,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "TRANSITO",
+      "estado": "ADOPTADO",
       "nombre": "CAMBIAR",
       "especie": "GATO",
       "sexo": "HEMBRA",
@@ -585,7 +586,7 @@
     {
       "id": 14,
       "fechaRegistro": "2023-11-22T15:02:55.608Z",
-      "estado": "TRANSITO",
+      "estado": "ADOPTADO",
       "nombre": "PEPA",
       "especie": "GATO",
       "sexo": "HEMBRA",
@@ -617,11 +618,35 @@
     },
     {
       "fechaSolicitud": "2023-11-21T23:51:35.174Z",
-      "estado": "PENDIENTE",
+      "estado": "ACEPTADA",
       "idUser": 2,
       "idAnimal": 9,
       "id": 3,
       "motivo": ""
+    },
+    {
+      "fechaSolicitud": "2023-11-22T22:50:56.110Z",
+      "estado": "ACEPTADA",
+      "motivo": "",
+      "idUser": 2,
+      "idAnimal": 3,
+      "id": 4
+    },
+    {
+      "fechaSolicitud": "2023-11-22T22:51:09.477Z",
+      "estado": "ACEPTADA",
+      "motivo": "",
+      "idUser": 2,
+      "idAnimal": 14,
+      "id": 5
+    },
+    {
+      "fechaSolicitud": "2023-11-22T22:51:18.602Z",
+      "estado": "ACEPTADA",
+      "motivo": "",
+      "idUser": 2,
+      "idAnimal": 11,
+      "id": 6
     }
   ]
 }

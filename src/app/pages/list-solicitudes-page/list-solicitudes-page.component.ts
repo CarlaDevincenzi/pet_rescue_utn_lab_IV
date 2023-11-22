@@ -66,7 +66,20 @@ export class ListSolicitudesPageComponent {
           console.log(response);
         },
         error: (errorData) => console.log(errorData)
-      });    
+      });
+      
+      if(this.usuario !=null){
+        if(!this.usuario.tipo.includes('ADOPTANTE')){
+           this.usuario.tipo.push('ADOPTANTE') ;
+        }
+        
+        this.userService.updateUser(this.usuario).subscribe({
+          next: (response) => {        
+            console.log(response);
+          },
+          error: (errorData) => console.log(errorData)
+        });
+      }
   
       solicitud.estado = "ACEPTADA";
       this.solicitudService.updateSolicitud(solicitud).subscribe({
