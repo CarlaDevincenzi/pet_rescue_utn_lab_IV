@@ -24,6 +24,7 @@ import { CardComponent } from './components/card/card.component';
 import { ListAnimalComponent } from './components/list-animal/list-animal.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { HeaderComponent } from './components/shared/header/header.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     CardComponent,
     ListAnimalComponent,
     HomePageComponent,
-    NavbarComponent       
+    NavbarComponent,
+    HeaderComponent       
   ],
   imports: [
     BrowserModule,
