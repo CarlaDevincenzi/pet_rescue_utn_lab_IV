@@ -384,7 +384,10 @@
       "imagenes": [
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
-      "compatibilidad": ["PERROS", "GATOS"],
+      "compatibilidad": [
+        "PERROS",
+        "GATOS"
+      ],
       "nombre": "SHIVA4",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -404,7 +407,9 @@
       "imagenes": [
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
-      "compatibilidad": ["NIÑOS"],
+      "compatibilidad": [
+        "NIÑOS"
+      ],
       "nombre": "SHIVA6",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -425,7 +430,9 @@
         "../../../assets/img/img-login.png",
         "https://material.angular.io/assets/img/examples/shiba2.jpg"
       ],
-      "compatibilidad": ["PERROS"],
+      "compatibilidad": [
+        "PERROS"
+      ],
       "nombre": "SHIVA8",
       "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
@@ -449,7 +456,10 @@
       "tamanio": "CHICO",
       "edad": 1,
       "descripcion": "Gata rescatada de una casilla en el monte. Aproximadamente 1 año , ya esta castrada",
-      "compatibilidad": ["NIÑOS", "PERROS"],
+      "compatibilidad": [
+        "NIÑOS",
+        "PERROS"
+      ],
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ]
@@ -463,7 +473,7 @@
       "sexo": "MACHO",
       "tamanio": "MEDIANO",
       "edad": 3,
-      "descripcion": "gato",
+      "descripcion": "Gato rescatado de una obra en construccion. Aprox 2 años de edad, ya lo hicimos castrar",
       "compatibilidad": [
         "NIÑOS"
       ],
@@ -471,5 +481,29 @@
         "../../../assets/img/SIMONA_1.jpg"
       ]
     }
+  ],
+  "solicitudes-adopcion": [
+    {
+      "fechaSolicitud": "2023-11-21T00:56:49.095Z",
+      "estado": "PENDIENTE",
+      "idUser": 2,
+      "idAnimal": 11,
+      "id": 1
+    },
+    {
+      "fechaSolicitud": "2023-11-21T00:57:09.098Z",
+      "estado": "PENDIENTE",
+      "idUser": 2,
+      "idAnimal": 10,
+      "id": 2
+    },
+    {
+      "fechaSolicitud": "2023-11-21T23:51:35.174Z",
+      "estado": "PENDIENTE",
+      "idUser": 2,
+      "idAnimal": 9,
+      "id": 3
+    }
   ]
+
 }
