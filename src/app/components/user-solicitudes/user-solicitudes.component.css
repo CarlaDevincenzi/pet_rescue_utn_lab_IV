@@ -1,0 +1,9 @@
+.image-container{
+    display: inline-flex;    
+    justify-content: space-between;
+}
+
+.title-solicitud{
+    font-family: 'Carter One';
+    font-size: 40px;
+}

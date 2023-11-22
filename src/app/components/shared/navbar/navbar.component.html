@@ -22,7 +22,7 @@
                       <a class="nav-link" href="#" routerLink="/login" >Iniciar Sesion <span class="sr-only"></span></a>
                   </li>
                   <li *ngIf="userId != null && !userType?.includes('ADMIN')" class="nav-item active">
-                    <a class="nav-link" href="#" routerLink="/user-modify"> Mis Datos  <span class="sr-only"></span></a>
+                    <a class="nav-link" href="#" routerLink="/user-solicitudes"> Mis Solicitudes  <span class="sr-only"></span></a>
                 </li>
                   <li *ngIf="userId != null" class="nav-item active">
                     <a class="nav-link" href="#" routerLink="/home" (click)="cerrarSesion()">Cerrar Sesion <span class="sr-only"></span></a>
