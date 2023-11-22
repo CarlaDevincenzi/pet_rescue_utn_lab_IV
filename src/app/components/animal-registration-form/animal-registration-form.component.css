@@ -1,0 +1,12 @@
+.campo{
+    display: flex;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}
+
+input[type="radio"] {    
+    margin-left: 12px;
+    margin-right: 3px;
+}

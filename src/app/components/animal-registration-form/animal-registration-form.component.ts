@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Animal } from 'src/app/models/animal';
 import { AnimalService } from 'src/app/sevices/animal.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-animal-registration-form',
@@ -56,9 +57,13 @@ export class AnimalRegistrationFormComponent {
 
         this.animalService.createAnimal(animal).subscribe({
           next: (response) => {
-            console.log(response)
-            this.animalForm.reset();
-            // this.router.navigateByUrl("") Implementar a donde va
+            console.log(response)            
+            Swal.fire({
+              title: '¡MASCOTA CARGADA CON EXITO!',              
+              icon: 'success',
+              confirmButtonText: 'OK',
+            })
+            this.router.navigateByUrl("/admin-home");
           },
           error: err => alert(err)
         })         
