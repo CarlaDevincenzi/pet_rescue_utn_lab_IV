@@ -1,7 +1,7 @@
 <div class="card" >
     <img [src]="animal.imagenes[0]" class="card-img-top" style="height:25rem" alt="...">
     <div class="card-body">
-      <h4 class="card-title">{{ animal.nombre }}</h4>
+      <h4 class="card-title style-title" >{{ animal.nombre }}</h4>
       <p class="card-text">{{ animal.descripcion.substring(0, 100).concat(' ...') }}</p>      
        
       <div class="button-position">
@@ -12,7 +12,7 @@
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 class="modal-title" id="staticBackdropLabel">{{ animal.nombre }}</h2>
+              <h2 class="modal-title style-title" id="staticBackdropLabel">{{ animal.nombre }}</h2>
               <button type="button" class="btn-close" (click)="cerrarModal()" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -33,7 +33,7 @@
               <p>{{ animal.descripcion }}</p>
             </div>
             <div class="modal-footer">          
-              <button type="button" class="btn btn-primary">¡ADOPTAR!</button>
+              <button *ngIf="!userType?.includes('ADMIN')" type="button" class="btn btn-primary" [disabled]="variable" (click)="adoptar(animal.id)">¡ADOPTAR!</button>
             </div>
           </div>
         </div>
