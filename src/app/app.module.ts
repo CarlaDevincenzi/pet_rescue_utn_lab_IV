@@ -25,6 +25,7 @@ import { ListAnimalComponent } from './components/list-animal/list-animal.compon
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HeaderComponent } from './components/shared/header/header.component';
+import { UserModifyPageComponent } from './pages/user-modify-page/user-modify-page.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { HeaderComponent } from './components/shared/header/header.component';
     ListAnimalComponent,
     HomePageComponent,
     NavbarComponent,
-    HeaderComponent       
+    HeaderComponent,
+    UserModifyPageComponent       
   ],
   imports: [
     BrowserModule,

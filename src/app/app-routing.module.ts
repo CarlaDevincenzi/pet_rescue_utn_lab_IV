@@ -5,6 +5,7 @@ import { UserHomePageComponent } from './pages/user-home-page/user-home-page.com
 import { AdminHomePageComponent } from './pages/admin-home-page/admin-home-page.component';
 import { RegistrationPageComponent } from './pages/registration-page/registration-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { UserModifyPageComponent } from './pages/user-modify-page/user-modify-page.component';
 
 const routes: Routes = [
   {path:'user-register', component:RegistrationPageComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'user-home', component: UserHomePageComponent},
   {path: 'admin-home', component: AdminHomePageComponent},
   {path: 'home', component: HomePageComponent},
+  {path: 'user-modify', component: UserModifyPageComponent},
   {path: '**', component: HomePageComponent}
 ];
 

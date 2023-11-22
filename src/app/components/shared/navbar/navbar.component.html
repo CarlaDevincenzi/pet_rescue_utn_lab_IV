@@ -15,12 +15,18 @@
                   <li class="nav-item active">
                       <a class="nav-link" href="#" routerLink="Home">Colabora con nosotros <span class="sr-only"></span></a>
                   </li>
-                  <li class="nav-item active">
+                  <li *ngIf="userId == null"class="nav-item active">
                       <a class="nav-link" href="#" routerLink="/user-register">Registrate <span class="sr-only"></span></a>
                   </li>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#" routerLink="/login">Iniciar Sesion <span class="sr-only"></span></a>
+                  <li *ngIf="userId == null" class="nav-item active">
+                      <a class="nav-link" href="#" routerLink="/login" >Iniciar Sesion <span class="sr-only"></span></a>
                   </li>
+                  <li *ngIf="userId != null && !userType?.includes('ADMIN')" class="nav-item active">
+                    <a class="nav-link" href="#" routerLink="/user-modify"> Mis Datos  <span class="sr-only"></span></a>
+                </li>
+                  <li *ngIf="userId != null" class="nav-item active">
+                    <a class="nav-link" href="#" routerLink="/home" (click)="cerrarSesion()">Cerrar Sesion <span class="sr-only"></span></a>
+                </li>
               
             </ul>
            

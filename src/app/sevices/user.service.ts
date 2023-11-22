@@ -36,9 +36,4 @@ export class UserService {
     return this.http.delete<User>(url);
   }
 
-  /* Manejo de sesion */
-  logOut(){
-    localStorage.clear();
-  }
-
 }
