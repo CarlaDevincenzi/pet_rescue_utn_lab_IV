@@ -1,0 +1,47 @@
+<div class="component-container">
+    <h2 class="title-solicitud">MIS SOLICITUDES DE ADOPCION</h2>       
+    <div class="accordion" id="accordionExample">
+        <div *ngFor="let item of misSolicitudes let i = index" class="accordion-item">
+          <h2 class="accordion-header" [attr.id]="'heading' + (i + 1)">
+            <button class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#collapse' + (i + 1)"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'collapse' + (i + 1)"
+                    (click)="verDatosAnimal(item.idAnimal)">
+                    <div>
+                        <h3>FECHA: {{ item.fechaSolicitud }}</h3>
+                    </div>              
+            </button>
+          </h2>
+          <div [id]="'collapse' + (i + 1)"
+               class="accordion-collapse collapse"
+               [class.show]="i === 0"
+               [attr.aria-labelledby]="'heading' + (i + 1)"
+               data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>Estado solicitud: {{ item.estado }}</p>
+                <p>Motivo (en caso de rechazo): {{ item.motivo }}</p>
+                <strong>Mascota solicitada:</strong>
+                <div>
+                    <p>Nombre: {{ animal?.nombre }}</p>
+                    <p>Estado: {{ animal?.estado }}</p>
+                    <p>Especie: {{ animal?.especie }}</p>
+                    <p>Sexo: {{ animal?.sexo }}</p>
+                    <p>Tamaño: {{ animal?.tamanio }}</p>
+                    <p>Edad aproximada: {{ animal?.edad }}</p>
+                    <p>Descripcion: {{ animal?.descripcion }}</p>
+                    <p>Compatibilidad: {{ animal?.compatibilidad }}</p>
+                    <div class="image-container" *ngFor="let item of animal?.imagenes">
+                        <img [src]="item" style="width: 150px; height:15rem">
+                    </div>                    
+                </div>
+                <br/>
+                
+            </div>
+          </div>
+          
+        </div>
+    </div>
+</div>

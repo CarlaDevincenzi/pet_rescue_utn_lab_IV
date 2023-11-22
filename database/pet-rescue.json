@@ -512,7 +512,7 @@
     {
       "id": 10,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "TRANSITO",
+      "estado": "ADOPTADO",
       "nombre": "CAMBIAR",
       "especie": "PERRO",
       "sexo": "MACHO",
@@ -601,15 +601,15 @@
   "solicitudes-adopcion": [
     {
       "fechaSolicitud": "2023-11-21T00:56:49.095Z",
-      "estado": "PENDIENTE",
+      "estado": "RECHAZADA",
       "idUser": 2,
       "idAnimal": 11,
       "id": 1,
-      "motivo": ""
+      "motivo": "se queda en la silla"
     },
     {
       "fechaSolicitud": "2023-11-21T00:57:09.098Z",
-      "estado": "PENDIENTE",
+      "estado": "ACEPTADA",
       "idUser": 2,
       "idAnimal": 10,
       "id": 2,
