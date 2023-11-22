@@ -340,117 +340,200 @@
   "animales": [
     {
       "id": 1,
-      "estado": "PENDIENTE",
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "SIMONA",
+      "especie": "GATO",
+      "sexo": "HEMBRA",
+      "tamanio": "CHICO",
+      "edad": 1,
       "imagenes": [
-        "../../../assets/img/SIMONA_1.jpg"
+        "../../../assets/img/SIMONA_1.jpg",
+        "../../../assets/img/SIMONA_2.png",
+        "../../../assets/img/SIMONA_3.png"
       ],
       "compatibilidad": [],
-      "nombre": "SIMONA",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+      "descripcion": "Gata rescatada de una casilla en el monte. Aprox 1 año , ya esta castrada. Le falta un ojito (aparentemente de nacimiento) pero eso no le impide desenvolverse con naturalidad"
     },
     {
       "id": 2,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
       "estado": "PENDIENTE",
+      "nombre": "GRECIA",
+      "especie": "PERRO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 5,
       "imagenes": [
-        "../../../assets/img/SIMONA_1.jpg"
-      ],
-      "compatibilidad": [],
-      "nombre": "SIMONA",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 3,
-      "estado": "PENDIENTE",
-      "imagenes": [
-        "../../../assets/img/SIMONA_1.jpg"
-      ],
-      "compatibilidad": [],
-      "nombre": "SIMONA",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 4,
-      "estado": "TRANSITO",
-      "imagenes": [
-        "../../../assets/img/SIMONA_1.jpg"
-      ],
-      "compatibilidad": [],
-      "nombre": "SIMONA",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 5,
-      "estado": "PENDIENTE",
-      "imagenes": [
-        "https://material.angular.io/assets/img/examples/shiba2.jpg"
-      ],
-      "compatibilidad": [
-        "PERROS",
-        "GATOS"
-      ],
-      "nombre": "SHIVA4",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 6,
-      "estado": "ADOPTADO",
-      "imagenes": [
-        "https://material.angular.io/assets/img/examples/shiba2.jpg"
-      ],
-      "compatibilidad": [],
-      "nombre": "SHIVA5",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 7,
-      "estado": "PENDIENTE",
-      "imagenes": [
-        "https://material.angular.io/assets/img/examples/shiba2.jpg"
-      ],
-      "compatibilidad": [
-        "NIÑOS"
-      ],
-      "nombre": "SHIVA6",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 8,
-      "estado": "ADOPTADO",
-      "imagenes": [
-        "https://material.angular.io/assets/img/examples/shiba2.jpg"
-      ],
-      "compatibilidad": [],
-      "nombre": "SHIVA7",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "id": 9,
-      "estado": "TRANSITO",
-      "imagenes": [
-        "../../../assets/img/img-login.png",
-        "https://material.angular.io/assets/img/examples/shiba2.jpg"
+        "../../../assets/img/GRECIA_1.png",
+        "../../../assets/img/GRECIA_2.png"
       ],
       "compatibilidad": [
         "PERROS"
       ],
-      "nombre": "SHIVA8",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+      "descripcion": "Totalmente invisible, llena de sarna, esquelética, con tumores y lesiones viejas en su cuerpo. Se cansaron de hacerla correr y sacarle crías, una vez que no sirvió más la descartaron. Hoy ella comienza el principio de una nueva vida. Tenemos que operarla de sus tumores y de paso aprovechamos la anestesia así es castrada. Quienes puedan colaborar se super agradece"
+    },
+    {
+      "id": 3,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "LIDIA",
+      "especie": "GATO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 4,
+      "imagenes": [
+        "../../../assets/img/LIDIA_1.png",
+        "../../../assets/img/LIDIA_2.png"
+      ],
+      "compatibilidad": [],
+      "descripcion": "Vivia en la calle y dormia en un árbol (en la 2da foto se puede ver) 😔, terrible lo que tuvo que pasar! Hoy esta en tránsito disfrutando de lo que le falto, ya está castrada y es una gata de aprox 4 años, super tranquila y amorosa. Busca un hogar sin otras mascotas! Como hija única 😊 Y sin niños! Es miedosa al principio, le lleva entrar en confianza por lo cual una persona tranquila sería lo ideal"
+    },
+    {
+      "id": 4,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "MANI",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
+    },
+    {
+      "id": 5,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "CAMBIAR",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
+    },
+    {
+      "id": 6,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "CAMBIAR",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
+    },
+    {
+      "id": 7,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "PENDIENTE",
+      "nombre": "CAMBIAR",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
+    },
+    {
+      "id": 8,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "CAMBIAR",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
+    },
+    {
+      "id": 9,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "CAMBIAR",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
     },
     {
       "id": 10,
-      "estado": "PENDIENTE",
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "CAMBIAR",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
       "imagenes": [
-        "../../../assets/img/SIMONA_1.jpg"
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
       ],
-      "compatibilidad": [],
-      "nombre": "SIMONA",
-      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content."
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
     },
     {
       "id": 11,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
       "estado": "TRANSITO",
-      "nombre": "SIMONA",
+      "nombre": "CAMBIAR",
       "especie": "GATO",
       "sexo": "HEMBRA",
       "tamanio": "CHICO",
@@ -468,7 +551,7 @@
       "id": 12,
       "fechaRegistro": "2023-11-16T21:50:42.125Z",
       "estado": "TRANSITO",
-      "nombre": "Matias",
+      "nombre": "CAMBIAR",
       "especie": "GATO",
       "sexo": "MACHO",
       "tamanio": "MEDIANO",
@@ -480,6 +563,39 @@
       "imagenes": [
         "../../../assets/img/SIMONA_1.jpg"
       ]
+    },
+    {
+      "id": 13,
+      "fechaRegistro": "2023-11-22T15:01:32.305Z",
+      "estado": "PENDIENTE",
+      "nombre": "PANCHO",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 3,
+      "descripcion": "Perro encontrado atropellado, ya tuvo atencion veterinaria y esta listo para encontrar un hogar!",
+      "compatibilidad": [
+        "PERROS",
+        "NIÑOS"
+      ],
+      "imagenes": [
+        "../../../assets/img/MANI_2.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "fechaRegistro": "2023-11-22T15:02:55.608Z",
+      "estado": "TRANSITO",
+      "nombre": "PEPA",
+      "especie": "GATO",
+      "sexo": "HEMBRA",
+      "tamanio": "CHICO",
+      "edad": 1,
+      "descripcion": "dkfjkdjfldkjfkdjfkdijfdkjfdsjfdjfkdfjdkjfkdjfkdjfkdidjfkdfdifjiefkdnkdjfdjfjdkfdkjfd",
+      "compatibilidad": [],
+      "imagenes": [
+        "../../../assets/img/SIMONA_3.png"
+      ]
     }
   ],
   "solicitudes-adopcion": [
@@ -488,22 +604,24 @@
       "estado": "PENDIENTE",
       "idUser": 2,
       "idAnimal": 11,
-      "id": 1
+      "id": 1,
+      "motivo": ""
     },
     {
       "fechaSolicitud": "2023-11-21T00:57:09.098Z",
       "estado": "PENDIENTE",
       "idUser": 2,
       "idAnimal": 10,
-      "id": 2
+      "id": 2,
+      "motivo": ""
     },
     {
       "fechaSolicitud": "2023-11-21T23:51:35.174Z",
       "estado": "PENDIENTE",
       "idUser": 2,
       "idAnimal": 9,
-      "id": 3
+      "id": 3,
+      "motivo": ""
     }
   ]
-
 }
