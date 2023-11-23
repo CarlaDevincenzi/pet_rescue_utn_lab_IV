@@ -31,6 +31,7 @@ import { ListSolicitudesPageComponent } from './pages/list-solicitudes-page/list
 import { UserSolicitudesComponent } from './components/user-solicitudes/user-solicitudes.component';
 import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.component';
 import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
+import { AdminListAnimalSinTransitoPageComponent } from './pages/admin-list-animal-sin-transito-page/admin-list-animal-sin-transito-page.component';
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import { UsuarioViewComponent } from './components/usuario-view/usuario-view.com
     HeaderComponent,
     UserModifyPageComponent,
     AnimalRegistrationPageComponent,    
-    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent          
+    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent, AdminListAnimalSinTransitoPageComponent          
   ],
   imports: [
     BrowserModule,

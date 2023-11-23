@@ -1,16 +1,6 @@
 <form [formGroup]="animalForm" (ngSubmit)="enviar()">
   <h2>REGISTRO DE NUEVA MASCOTA</h2>    
-    <div class="campo">
-        <label for="estado">Estado: </label>
-        <input type="radio"  value="TRANSITO" formControlName="estado">TRANSITO 
-        <input type="radio"  value="ADOPTADO" formControlName="estado">ADOPTADO
-        <input type="radio"  value="PENDIENTE" formControlName="estado">PENDIENTE
-        <div *ngIf="animalForm.get('estado')?.invalid && (animalForm.get('estado')?.dirty || animalForm.get('estado')?.touched)">
-          <small class="text-danger" *ngIf="animalForm.get('estado')?.errors?.['required']">El estado es requerido.</small>          
-        </div>      
-    </div>
-    <br/>
-
+    
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre:</label>
         <input type="text" class="form-control" formControlName="nombre" id="nombre" aria-describedby="emailHelp">
