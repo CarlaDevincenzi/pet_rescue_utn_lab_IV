@@ -378,7 +378,7 @@
     {
       "id": 3,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "PENDIENTE",
+      "estado": "TRANSITO",
       "nombre": "LIDIA",
       "especie": "GATO",
       "sexo": "HEMBRA",
@@ -389,7 +389,8 @@
         "../../../assets/img/LIDIA_2.png"
       ],
       "compatibilidad": [],
-      "descripcion": "Vivia en la calle y dormia en un árbol (en la 2da foto se puede ver) 😔, terrible lo que tuvo que pasar! Hoy esta en tránsito disfrutando de lo que le falto, ya está castrada y es una gata de aprox 4 años, super tranquila y amorosa. Busca un hogar sin otras mascotas! Como hija única 😊 Y sin niños! Es miedosa al principio, le lleva entrar en confianza por lo cual una persona tranquila sería lo ideal"
+      "descripcion": "Vivia en la calle y dormia en un árbol (en la 2da foto se puede ver) 😔, terrible lo que tuvo que pasar! Hoy esta en tránsito disfrutando de lo que le falto, ya está castrada y es una gata de aprox 4 años, super tranquila y amorosa. Busca un hogar sin otras mascotas! Como hija única 😊 Y sin niños! Es miedosa al principio, le lleva entrar en confianza por lo cual una persona tranquila sería lo ideal",
+      "idUsuario": 8
     },
     {
       "id": 4,
@@ -454,7 +455,7 @@
     {
       "id": 7,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "PENDIENTE",
+      "estado": "TRANSITO",
       "nombre": "CAMBIAR",
       "especie": "PERRO",
       "sexo": "MACHO",
@@ -470,7 +471,7 @@
         "PERROS"
       ],
       "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa.",
-      "idUsuario": null
+      "idUsuario": 8
     },
     {
       "id": 8,

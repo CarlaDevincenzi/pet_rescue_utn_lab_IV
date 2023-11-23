@@ -77,6 +77,10 @@ export class CardComponent {
                 Swal.fire({
                   title: 'Actualizacion realizada con exito!',
                   icon: 'success'})
+                  
+                  setTimeout(() => { 
+                    window.location.reload();          
+                  }, 3000);     
               },
               error: (errorData) => alert(errorData)
             });
