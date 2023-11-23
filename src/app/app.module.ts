@@ -32,6 +32,8 @@ import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.
 import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
 import { AdminListAnimalSinTransitoPageComponent } from './pages/admin-list-animal-sin-transito-page/admin-list-animal-sin-transito-page.component';
 import { AdminListAnimalTransitoComponent } from './pages/admin-list-animal-transito/admin-list-animal-transito.component';
+import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { ColaboraComponent } from './components/colabora/colabora.component';
 
 
 
@@ -53,7 +55,7 @@ import { AdminListAnimalTransitoComponent } from './pages/admin-list-animal-tran
     NavbarComponent,
     HeaderComponent,
     AnimalRegistrationPageComponent,    
-    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent, AdminListAnimalSinTransitoPageComponent, AdminListAnimalTransitoComponent          
+    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent, AdminListAnimalSinTransitoPageComponent, AdminListAnimalTransitoComponent, QuienesSomosComponent, ColaboraComponent          
   ],
   imports: [
     BrowserModule,

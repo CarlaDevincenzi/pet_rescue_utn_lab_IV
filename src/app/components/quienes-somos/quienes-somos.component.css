@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+p {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(42, 165, 159);
+}
+
+.qs{
+    
+    margin: auto;
+    width: 80%;
+    text-align:justify ;
+}
+
+.imagen{
+
+    
+        display: block;
+        width: 60%;
+        margin: auto;
+      
+}

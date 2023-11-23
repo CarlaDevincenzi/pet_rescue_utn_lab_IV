@@ -13,6 +13,8 @@ import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.
 import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
 import { AdminListAnimalSinTransitoPageComponent } from './pages/admin-list-animal-sin-transito-page/admin-list-animal-sin-transito-page.component';
 import { AdminListAnimalTransitoComponent } from './pages/admin-list-animal-transito/admin-list-animal-transito.component';
+import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { ColaboraComponent } from './components/colabora/colabora.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,8 @@ const routes: Routes = [
   {path: 'ver-info/:id', component: UsuarioViewComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
   {path: 'animales-sin-transito', component: AdminListAnimalSinTransitoPageComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
   {path: 'animales-en-transito', component: AdminListAnimalTransitoComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
+  {path: 'quienes-somos', component: QuienesSomosComponent},
+  {path: 'colabora', component: ColaboraComponent},
   {path: '**', component: HomePageComponent}
 ];
 
