@@ -10,7 +10,7 @@
             <p>Email: {{ usuario?.email }}</p>
             <div><strong>VIVIENDA:</strong> 
                 <p>Cantidad integrantes: {{ usuario?.datosVivienda?.integrantes }}</p>
-                <p>Ambientes{{ usuario?.datosVivienda?.ambientes }}</p>
+                <p>Ambientes: {{ usuario?.datosVivienda?.ambientes }}</p>
                 <p>Tipo vivienda: {{ usuario?.datosVivienda?.tipoVivienda }}</p>
                 <p *ngIf="usuario?.datosVivienda?.ninios">Tiene niños: SI</p>
                 <p *ngIf="!usuario?.datosVivienda?.ninios">Tiene niños: NO</p>

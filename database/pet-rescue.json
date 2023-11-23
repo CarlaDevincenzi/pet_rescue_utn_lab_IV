@@ -12,7 +12,7 @@
       "id": 2,
       "tipo": [
         "TRANSITO",
-        "ADOPTANTE"        
+        "ADOPTANTE"
       ],
       "dni": 25987456,
       "apellido": "Fulanito",
@@ -214,8 +214,8 @@
         "TRANSITO"
       ],
       "dni": 31821265,
-      "apellido": "Chori",
-      "nombre": "Planero",
+      "apellido": "Martinez",
+      "nombre": "Paula",
       "domicilio": {
         "calle": "cordoba",
         "numero": 4512,
@@ -372,12 +372,13 @@
       "compatibilidad": [
         "PERROS"
       ],
-      "descripcion": "Totalmente invisible, llena de sarna, esquelética, con tumores y lesiones viejas en su cuerpo. Se cansaron de hacerla correr y sacarle crías, una vez que no sirvió más la descartaron. Hoy ella comienza el principio de una nueva vida. Tenemos que operarla de sus tumores y de paso aprovechamos la anestesia así es castrada. Quienes puedan colaborar se super agradece"
+      "descripcion": "Totalmente invisible, llena de sarna, esquelética, con tumores y lesiones viejas en su cuerpo. Se cansaron de hacerla correr y sacarle crías, una vez que no sirvió más la descartaron. Hoy ella comienza el principio de una nueva vida. Tenemos que operarla de sus tumores y de paso aprovechamos la anestesia así es castrada. Quienes puedan colaborar se super agradece",
+      "idUsuario": null
     },
     {
       "id": 3,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "ADOPTADO",
+      "estado": "PENDIENTE",
       "nombre": "LIDIA",
       "especie": "GATO",
       "sexo": "HEMBRA",
@@ -468,7 +469,8 @@
         "GATOS",
         "PERROS"
       ],
-      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa."
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa.",
+      "idUsuario": null
     },
     {
       "id": 8,
@@ -581,7 +583,8 @@
       ],
       "imagenes": [
         "../../../assets/img/MANI_2.jpg"
-      ]
+      ],
+      "idUsuario": null
     },
     {
       "id": 14,
