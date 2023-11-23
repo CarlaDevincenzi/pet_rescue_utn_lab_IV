@@ -9,6 +9,8 @@ import { AnimalRegistrationPageComponent } from './pages/animal-registration-pag
 import { ListSolicitudesPageComponent } from './pages/list-solicitudes-page/list-solicitudes-page.component';
 import { UserSolicitudesComponent } from './components/user-solicitudes/user-solicitudes.component';
 import { AuthGuard } from './sevices/auth.service';
+import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.component';
+import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
 
 const routes: Routes = [
   {path:'user-register', component:RegistrationPageComponent},
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path: 'user-solicitudes', component: UserSolicitudesComponent, canActivate: [AuthGuard], data: { roles: ['TRANSITO', 'ADOPTANTE', ''] }},
   {path: 'animal-registration', component: AnimalRegistrationPageComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']}},
   {path: 'list-solicitudes', component: ListSolicitudesPageComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']}},
+  {path: 'admin-listar-usuarios-transito', component: ListUsuariosComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
+  {path: 'ver-info/:id', component: UsuarioViewComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
   {path: '**', component: HomePageComponent}
 ];
 
