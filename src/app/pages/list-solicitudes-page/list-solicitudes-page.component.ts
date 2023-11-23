@@ -60,7 +60,9 @@ export class ListSolicitudesPageComponent {
 
   aceptarAdopcion(solicitud: SolicitudAdopcion){
     if(this.animal !=null){
-      this.animal.estado = "ADOPTADO" ;
+      this.animal.estado = "ADOPTADO";
+      this.animal.idUsuario = solicitud.idUser;
+      
       this.animalService.updateAnimal(this.animal).subscribe({
         next: (response) => {        
           console.log(response);
