@@ -216,6 +216,41 @@
         "size": "INDISTINTO",
         "especie": "INDISTINTO"
       }
+    },
+    {
+      "fechaRegistro": "2023-11-23T20:00:31.263Z",
+      "id": 8,
+      "tipo": [
+        "TRANSITO",
+        "ADOPTANTE"
+      ],
+      "dni": 343443,
+      "apellido": "garcia",
+      "nombre": "ilda",
+      "domicilio": {
+        "calle": "gascon",
+        "numero": 123,
+        "piso": "1",
+        "departamento": "a",
+        "codigoPostal": 7600
+      },
+      "telefono": 154474458,
+      "email": "ilda@gmail.com",
+      "contrasenia": "12345",
+      "datosVivienda": {
+        "integrantes": 5,
+        "ninios": true,
+        "mascota": true,
+        "tipoVivienda": "DEPARTAMENTO",
+        "ambientes": 3,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "MEDIANO",
+        "especie": "GATO"
+      }
     }
   ],
   "animales": [
@@ -416,7 +451,7 @@
       ],
       "descripcion": "Actualmente tengo 5 meses y voy a ser de tamaño mediano, me llevo bien con perros y gatos, puedo vivir en depto y me portó bastante bien para ser cachorro. En mi vida solo faltas vos!",
       "idUsuario": null
-    }
+    }    
   ],
   "solicitudes-adopcion": []
 }
