@@ -31,9 +31,12 @@
                 <p > Compatible con: {{ animal.compatibilidad }}</p>
               </ng-container>              
               <p>{{ animal.descripcion }}</p>
+              <p *ngIf="userType?.includes('ADMIN') && (animal.estado === 'TRANSITO' || animal.estado === 'ADOPTADO') ">
+                    Usuario a cargo: {{ animal.idUsuario }} </p>
             </div>
             <div class="modal-footer">          
               <button *ngIf="!userType?.includes('ADMIN')" type="button" class="btn btn-primary" [disabled]="variable" (click)="adoptar(animal.id)">¡ADOPTAR!</button>
+              <button *ngIf="userType?.includes('ADMIN') && animal.estado === 'PENDIENTE'" type="button" class="btn btn-primary" (click)="asignarTransito(animal)">ASIGNAR TRANSITO</button>
             </div>
           </div>
         </div>

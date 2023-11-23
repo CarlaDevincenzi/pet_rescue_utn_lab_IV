@@ -18,7 +18,7 @@
                         <div *ngIf="rechazo">
                             <form  id="formulario" (ngSubmit)="submit(item)" [formGroup]="formulario">
                                 <div class="campo">
-                                    <label for="dni">Motivo rechazo:</label >
+                                    <label for="motivo">Motivo rechazo:</label >
                                     <input type="text" formControlName="motivo">
                                 </div>                                
                                 <div class="campo">
@@ -59,7 +59,7 @@
                     <p>Email: {{ usuario?.email }}</p>
                     <div>VIVIENDA: 
                         <p>Cantidad integrantes: {{ usuario?.datosVivienda?.integrantes }}</p>
-                        <p>Ambientes{{ usuario?.datosVivienda?.ambientes }}</p>
+                        <p>Ambientes: {{ usuario?.datosVivienda?.ambientes }}</p>
                         <p>Tipo vivienda: {{ usuario?.datosVivienda?.tipoVivienda }}</p>
                         <p *ngIf="usuario?.datosVivienda?.ninios">Tiene niños: SI</p>
                         <p *ngIf="!usuario?.datosVivienda?.ninios">Tiene niños: NO</p>

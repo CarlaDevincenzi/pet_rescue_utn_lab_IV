@@ -20,8 +20,7 @@ export class AnimalRegistrationFormComponent {
   imagenes:string[] = [];
   urlImagen:string = ''; 
   
-  animalForm: FormGroup = this.fb.group({
-    estado: ['', Validators.required],
+  animalForm: FormGroup = this.fb.group({    
     nombre: ['', [Validators.required, Validators.pattern(/^[a-zA-Z]+$/)]],
     especie: ['', Validators.required],
     sexo: ['', Validators.required],    
@@ -32,7 +31,6 @@ export class AnimalRegistrationFormComponent {
     imagen: ['', [Validators.required, Validators.pattern(/\.(jpg|jpeg|png)$/)]]    
   });
   
-  get estado() { return this.animalForm.get('estado') }
   get nombre() { return this.animalForm.get('nombre') }
   get especie() { return this.animalForm.get('especie') }
   get sexo() { return this.animalForm.get('sexo') }
@@ -44,8 +42,7 @@ export class AnimalRegistrationFormComponent {
   
   enviar(){
     if (this.animalForm.valid) {
-        const animal: Animal = new Animal();
-        animal.estado = this.estado?.value;
+        const animal: Animal = new Animal();        
         animal.nombre = this.nombre?.value;
         animal.especie = this.especie?.value;
         animal.sexo = this.sexo?.value;
