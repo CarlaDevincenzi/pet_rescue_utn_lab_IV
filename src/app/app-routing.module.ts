@@ -12,6 +12,8 @@ import { AuthGuard } from './sevices/auth.service';
 import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.component';
 import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
 import { AdminListAnimalSinTransitoPageComponent } from './pages/admin-list-animal-sin-transito-page/admin-list-animal-sin-transito-page.component';
+import { AdminListAnimalTransitoComponent } from './pages/admin-list-animal-transito/admin-list-animal-transito.component';
+
 
 const routes: Routes = [
   {path:'user-register', component:RegistrationPageComponent},
@@ -25,6 +27,7 @@ const routes: Routes = [
   {path: 'admin-listar-usuarios-transito', component: ListUsuariosComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
   {path: 'ver-info/:id', component: UsuarioViewComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
   {path: 'animales-sin-transito', component: AdminListAnimalSinTransitoPageComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
+  {path: 'animales-en-transito', component: AdminListAnimalTransitoComponent, canActivate: [AuthGuard], data: { roles: ['ADMIN']} },
   {path: '**', component: HomePageComponent}
 ];
 

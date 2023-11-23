@@ -25,13 +25,14 @@ import { ListAnimalComponent } from './components/list-animal/list-animal.compon
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HeaderComponent } from './components/shared/header/header.component';
-import { UserModifyPageComponent } from './pages/user-modify-page/user-modify-page.component';
 import { AnimalRegistrationPageComponent } from './pages/animal-registration-page/animal-registration-page.component';
 import { ListSolicitudesPageComponent } from './pages/list-solicitudes-page/list-solicitudes-page.component';
 import { UserSolicitudesComponent } from './components/user-solicitudes/user-solicitudes.component';
 import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.component';
 import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
 import { AdminListAnimalSinTransitoPageComponent } from './pages/admin-list-animal-sin-transito-page/admin-list-animal-sin-transito-page.component';
+import { AdminListAnimalTransitoComponent } from './pages/admin-list-animal-transito/admin-list-animal-transito.component';
+
 
 
 @NgModule({
@@ -51,9 +52,8 @@ import { AdminListAnimalSinTransitoPageComponent } from './pages/admin-list-anim
     HomePageComponent,
     NavbarComponent,
     HeaderComponent,
-    UserModifyPageComponent,
     AnimalRegistrationPageComponent,    
-    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent, AdminListAnimalSinTransitoPageComponent          
+    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent, AdminListAnimalSinTransitoPageComponent, AdminListAnimalTransitoComponent          
   ],
   imports: [
     BrowserModule,
