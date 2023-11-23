@@ -29,6 +29,8 @@ import { UserModifyPageComponent } from './pages/user-modify-page/user-modify-pa
 import { AnimalRegistrationPageComponent } from './pages/animal-registration-page/animal-registration-page.component';
 import { ListSolicitudesPageComponent } from './pages/list-solicitudes-page/list-solicitudes-page.component';
 import { UserSolicitudesComponent } from './components/user-solicitudes/user-solicitudes.component';
+import { ListUsuariosComponent } from './components/list-usuarios/list-usuarios.component';
+import { UsuarioViewComponent } from './components/usuario-view/usuario-view.component';
 
 
 @NgModule({
@@ -50,7 +52,7 @@ import { UserSolicitudesComponent } from './components/user-solicitudes/user-sol
     HeaderComponent,
     UserModifyPageComponent,
     AnimalRegistrationPageComponent,    
-    ListSolicitudesPageComponent, UserSolicitudesComponent          
+    ListSolicitudesPageComponent, UserSolicitudesComponent, ListUsuariosComponent, UsuarioViewComponent          
   ],
   imports: [
     BrowserModule,
