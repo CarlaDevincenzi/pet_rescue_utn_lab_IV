@@ -1,0 +1,43 @@
+.campo{
+    display: flex;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="email"],  
+.campo input[type="password"],
+.campo input[type="date"]
+{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: .8px solid #e1e1e1;
+    
+}
+
+.campo input[type="submit"]{
+    margin-bottom: 1rem;
+    border: .8px solid #e1e1e1;
+    background-color: rgb(11, 181, 190);
+    color: aliceblue;
+    margin: 0 auto;
+   
+}
+.seccion{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.seccion fieldset{
+    border: .8px solid #e1e1e1;
+}
+
+#encabezado{
+    background-color: rgb(11, 181, 190);
+    text-align: center;
+    color: aliceblue;
+}
+

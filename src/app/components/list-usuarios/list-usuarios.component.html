@@ -1,0 +1,24 @@
+<main>
+    <h1>Listado de Usuarios</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Domicilio</th>
+                <th>Telefono</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="usuarios">
+            <tr *ngFor="let item of listadoUsuarios">
+                <td>{{item.apellido}}</td>
+                <td>{{item.nombre}}</td>
+                <td>{{item.domicilio.calle}} Nro. {{ item.domicilio.numero }}</td>
+                <td>{{item.telefono}}</td>                
+                <td>{{item.email}}</td>                
+                <td><a class="btnEditar" [routerLink]="['/ver-info/', item.id]">VER MAS</a></td>
+            </tr>
+        </tbody>
+    </table>
+</main>

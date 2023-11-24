@@ -1,0 +1,457 @@
+{
+  "usuarios": [
+    {
+      "fechaRegistro": "2023-11-15T23:11:24.102Z",
+      "id": 1,
+      "tipo": [
+        "ADMIN"
+      ],
+      "dni": 32262458,
+      "contrasenia": "admin123"
+    },
+    {
+      "fechaRegistro": "2023-11-15T23:11:24.102Z",
+      "id": 2,
+      "tipo": [
+        "TRANSITO",
+        "ADOPTANTE"
+      ],
+      "dni": 25987456,
+      "apellido": "Fulanito",
+      "nombre": "Cosme",
+      "domicilio": {
+        "calle": "Avenida Siempre Viva",
+        "numero": 742,
+        "piso": 0,
+        "departamento": "",
+        "codigoPostal": 7600
+      },
+      "telefono": 2235888222,
+      "email": "cfulanito@gmail.com",
+      "contrasenia": "fulanito",
+      "datosVivienda": {
+        "integrantes": 5,
+        "ninios": true,
+        "mascota": true,
+        "especificacion": "gato y perro",
+        "tipoVivienda": "CASA",
+        "ambientes": 5,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-15T23:11:24.102Z",
+      "id": 3,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 31821264,
+      "apellido": "Perez",
+      "nombre": "Mariano",
+      "domicilio": {
+        "calle": "Rivadavia",
+        "numero": "3868",
+        "piso": 0,
+        "departamento": "",
+        "codigoPostal": "7600"
+      },
+      "telefono": "2235963852",
+      "email": "mariano@gmail.com",
+      "contrasenia": "mariano123",
+      "datosVivienda": {
+        "integrantes": 2,
+        "ninios": false,
+        "mascota": false,
+        "tipoVivienda": "DEPARTAMENTO",
+        "ambientes": 3,
+        "patio": false
+      },
+      "disponibilidad": {
+        "startDate": "2023-11-15",
+        "endDate": "2023-12-09",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T00:52:33.884Z",
+      "id": 4,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 33323231,
+      "apellido": "Gomez",
+      "nombre": "Carolina",
+      "domicilio": {
+        "calle": "Peña",
+        "numero": 3174,
+        "piso": 3,
+        "departamento": "2",
+        "codigoPostal": 7600
+      },
+      "telefono": 2234478896,
+      "email": "carlos@gmail.com",
+      "contrasenia": "carlos123",
+      "datosVivienda": {
+        "integrantes": 4,
+        "ninios": true,
+        "mascota": true,
+        "especificacion": "2 perros",
+        "tipoVivienda": "CASA",
+        "ambientes": 4,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T01:02:29.026Z",
+      "id": 5,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 45535533,
+      "apellido": "Gutierrez",
+      "nombre": "Juan Manuel",
+      "domicilio": {
+        "calle": "Jujuy",
+        "numero": 2332,
+        "piso": 0,
+        "departamento": "",
+        "codigoPostal": 7600
+      },
+      "telefono": 2235911911,
+      "email": "juanmanuel@gmail.com",
+      "contrasenia": "juanmanuel123",
+      "datosVivienda": {
+        "integrantes": 4,
+        "ninios": true,
+        "mascota": false,
+        "tipoVivienda": "CASA",
+        "ambientes": 3,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T01:06:27.163Z",
+      "id": 6,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 35123456,
+      "apellido": "Fernandez",
+      "nombre": "Olga",
+      "domicilio": {
+        "calle": "San Lorenzo",
+        "numero": 1589,
+        "piso": 2,
+        "departamento": "b",
+        "codigoPostal": 7600
+      },
+      "telefono": 2235741258,
+      "email": "olga@gmail.com",
+      "contrasenia": "olga1234",
+      "datosVivienda": {
+        "integrantes": 4,
+        "ninios": true,
+        "mascota": true,
+        "especificacion": "1 gato",
+        "tipoVivienda": "DEPARTAMENTO",
+        "ambientes": 3,
+        "patio": false
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-16T21:56:46.022Z",
+      "id": 7,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 25159753,
+      "apellido": "Stark",
+      "nombre": "Tony",
+      "domicilio": {
+        "calle": "Belgrano",
+        "numero": 3580,
+        "piso": 0,
+        "departamento": "",
+        "codigoPostal": 7600
+      },
+      "telefono": 2236190165,
+      "email": "ironman@gmail.com",
+      "contrasenia": "ironman123",
+      "datosVivienda": {
+        "integrantes": 3,
+        "ninios": false,
+        "mascota": false,
+        "tipoVivienda": "CASA",
+        "ambientes": 8,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
+    },
+    {
+      "fechaRegistro": "2023-11-23T20:00:31.263Z",
+      "id": 8,
+      "tipo": [
+        "TRANSITO",
+        "ADOPTANTE"
+      ],
+      "dni": 343443,
+      "apellido": "garcia",
+      "nombre": "ilda",
+      "domicilio": {
+        "calle": "gascon",
+        "numero": 123,
+        "piso": "1",
+        "departamento": "a",
+        "codigoPostal": 7600
+      },
+      "telefono": 154474458,
+      "email": "ilda@gmail.com",
+      "contrasenia": "12345",
+      "datosVivienda": {
+        "integrantes": 5,
+        "ninios": true,
+        "mascota": true,
+        "tipoVivienda": "DEPARTAMENTO",
+        "ambientes": 3,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "MEDIANO",
+        "especie": "GATO"
+      }
+    }
+  ],
+  "animales": [
+    {
+      "id": 1,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "SIMONA",
+      "especie": "GATO",
+      "sexo": "HEMBRA",
+      "tamanio": "CHICO",
+      "edad": 1,
+      "imagenes": [
+        "../../../assets/img/SIMONA_1.jpg",
+        "../../../assets/img/SIMONA_2.png",
+        "../../../assets/img/SIMONA_3.png"
+      ],
+      "compatibilidad": [],
+      "descripcion": "Gata rescatada de una casilla en el monte. Aprox 1 año , ya esta castrada. Le falta un ojito (aparentemente de nacimiento) pero eso no le impide desenvolverse con naturalidad",
+      "idUsuario": 7
+    },
+    {
+      "id": 2,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "PENDIENTE",
+      "nombre": "GRECIA",
+      "especie": "PERRO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 5,
+      "imagenes": [
+        "../../../assets/img/GRECIA_1.png",
+        "../../../assets/img/GRECIA_2.png"
+      ],
+      "compatibilidad": [
+        "PERROS"
+      ],
+      "descripcion": "Totalmente invisible, llena de sarna, esquelética, con tumores y lesiones viejas en su cuerpo. Se cansaron de hacerla correr y sacarle crías, una vez que no sirvió más la descartaron. Hoy ella comienza el principio de una nueva vida. Tenemos que operarla de sus tumores y de paso aprovechamos la anestesia así es castrada. Quienes puedan colaborar se super agradece",
+      "idUsuario": null
+    },
+    {
+      "id": 3,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "LIDIA",
+      "especie": "GATO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 4,
+      "imagenes": [
+        "../../../assets/img/LIDIA_1.png",
+        "../../../assets/img/LIDIA_2.png"
+      ],
+      "compatibilidad": [],
+      "descripcion": "Vivia en la calle y dormia en un árbol (en la 2da foto se puede ver) 😔, terrible lo que tuvo que pasar! Hoy esta en tránsito disfrutando de lo que le falto, ya está castrada y es una gata de aprox 4 años, super tranquila y amorosa. Busca un hogar sin otras mascotas! Como hija única 😊 Y sin niños! Es miedosa al principio, le lleva entrar en confianza por lo cual una persona tranquila sería lo ideal",
+      "idUsuario": 6
+    },
+    {
+      "id": 4,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "MANI",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/MANI_1.jpg",
+        "../../../assets/img/MANI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perro de 6 meses y ya está castrado, va a ser tamaño mediano quizás grande, se lleva genial con otros perros y no tiene problema con gatos, es un perro activo por lo cual sería ideal casa con patio y otro perro social para jaguar, si es depto hay que tener el tiempo para dedicarle a sus paseos y juegos en la plaza y playa.",
+      "idUsuario": 7
+    },
+    {
+      "id": 5,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "DIBU",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 1,
+      "imagenes": [
+        "../../../assets/img/DIBU_1.jpg",
+        "../../../assets/img/DIBU_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Este cachorron tiene un año aprox y su tamaño es el que se ve en la foto (mediano). Es muy bueno, tranquilo y se lleva genial con otros perros sociales y gatos. Busca una casa con patio ya que el tema del paseo y la correa aún no son su fuerte.",
+      "idUsuario": 3
+    },
+    {
+      "id": 6,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "PENDIENTE",
+      "nombre": "OSCAR",
+      "especie": "GATO",
+      "sexo": "MACHO",
+      "tamanio": "CHICO",
+      "edad": 1,
+      "imagenes": [
+        "../../../assets/img/OSCAR_1.jpg",
+        "../../../assets/img/OSCAR_2.jpg"
+      ],
+      "compatibilidad": [
+        "GATOS"
+      ],
+      "descripcion": "El fue rescatado hace un tiempo junto a su mamá, vivían literal en la calle y dormian en un árbol 💔 El tenia un hermanito que lamentablemente murió cuando lo choco un auto 😔 Oscar tiene un año y ya está castrado.",
+      "idUsuario": null
+    },
+    {
+      "id": 7,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "ZURI",
+      "especie": "PERRO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 3,
+      "imagenes": [
+        "../../../assets/img/ZURI_1.jpg",
+        "../../../assets/img/ZURI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Increíble el ser humano 💔 Le pusieron una cadena con tan solo días de vida, le sacaron la posibilidad de tener una familia, ser parte de un hogar, jugar, correr y ser una perra feliz ! Actualmente está en tránsito con otra perrita y un gato y se llevan bien, puede ir a depto o casa pero no sabe aún quedarse mucho tiempo sola, algo que con tiempo y paciencia va a poder ir aprendiendo 😊",
+      "idUsuario": 5
+    },
+    {
+      "id": 8,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "PENDIENTE",
+      "nombre": "KIRA",
+      "especie": "PERRO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/KIRA_1.jpg",
+        "../../../assets/img/KIRA_2.jpg"
+      ],
+      "compatibilidad": [
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Mueran de amor con esa sonrisa ☺️ Ella tiene 8 meses, es tamaño mediano a chico y ya está castrada. Se lleva genial con perros y gatos. Es super buena y amorosa.",
+      "idUsuario": null
+    },
+    {
+      "id": 9,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "TRANSITO",
+      "nombre": "DASHA",
+      "especie": "PERRO",
+      "sexo": "HEMBRA",
+      "tamanio": "MEDIANO",
+      "edad": 6,
+      "imagenes": [
+        "../../../assets/img/DASHA_1.jpg",
+        "../../../assets/img/DASHA_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Perra cieguita. Ella es una luchadora que merece encontrar un hogar! Tener una familia que la ame y cuide el tiempo que le quede. Hoy tiene aprox 6 años, está castrada, es tamaño mediano, súper entendida, muy amorosa y compañera. Le encanta salir a pasear, le gusta mucho tomar sol (sería ideal casa con patio o depto con mucho sol) No tiene problema con otros perros pero al ser ciega y chocarlos sería ideal que vaya sola o con perros con paciencia. Una vez que reconoce el lugar ya se maneja genial sin chocarse cosas.",
+      "idUsuario": 2
+    },
+    {
+      "id": 10,
+      "fechaRegistro": "2023-11-16T18:36:21.330Z",
+      "estado": "PENDIENTE",
+      "nombre": "KAI",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 0,
+      "imagenes": [
+        "../../../assets/img/KAI_1.jpg",
+        "../../../assets/img/KAI_2.jpg"
+      ],
+      "compatibilidad": [
+        "NIÑOS",
+        "GATOS",
+        "PERROS"
+      ],
+      "descripcion": "Actualmente tengo 5 meses y voy a ser de tamaño mediano, me llevo bien con perros y gatos, puedo vivir en depto y me portó bastante bien para ser cachorro. En mi vida solo faltas vos!",
+      "idUsuario": null
+    }    
+  ],
+  "solicitudes-adopcion": []
+}
