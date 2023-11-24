@@ -15,7 +15,7 @@ export class SessionService {
   logOut(){
     localStorage.clear();
     this.router.navigateByUrl("/home");
-    window.location.reload();
+    // window.location.reload();
   }
 
 
