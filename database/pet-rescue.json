@@ -251,6 +251,40 @@
         "size": "MEDIANO",
         "especie": "GATO"
       }
+    },
+    {
+      "fechaRegistro": "2023-11-23T23:37:17.475Z",
+      "id": 9,
+      "tipo": [
+        "TRANSITO"
+      ],
+      "dni": 35666888,
+      "apellido": "LApenna",
+      "nombre": "Agus",
+      "domicilio": {
+        "calle": "Rawson",
+        "numero": 123,
+        "piso": "",
+        "departamento": "",
+        "codigoPostal": 7600
+      },
+      "telefono": 2234567899,
+      "email": "agus@gmail.com",
+      "contrasenia": "1234",
+      "datosVivienda": {
+        "integrantes": 1,
+        "ninios": false,
+        "mascota": true,
+        "tipoVivienda": "CASA",
+        "ambientes": 3,
+        "patio": true
+      },
+      "disponibilidad": {
+        "startDate": "",
+        "endDate": "",
+        "size": "INDISTINTO",
+        "especie": "INDISTINTO"
+      }
     }
   ],
   "animales": [
@@ -393,7 +427,7 @@
     {
       "id": 8,
       "fechaRegistro": "2023-11-16T18:36:21.330Z",
-      "estado": "PENDIENTE",
+      "estado": "TRANSITO",
       "nombre": "KIRA",
       "especie": "PERRO",
       "sexo": "HEMBRA",
@@ -408,7 +442,7 @@
         "PERROS"
       ],
       "descripcion": "Mueran de amor con esa sonrisa ☺️ Ella tiene 8 meses, es tamaño mediano a chico y ya está castrada. Se lleva genial con perros y gatos. Es super buena y amorosa.",
-      "idUsuario": null
+      "idUsuario": 6
     },
     {
       "id": 9,
@@ -451,7 +485,44 @@
       ],
       "descripcion": "Actualmente tengo 5 meses y voy a ser de tamaño mediano, me llevo bien con perros y gatos, puedo vivir en depto y me portó bastante bien para ser cachorro. En mi vida solo faltas vos!",
       "idUsuario": null
-    }    
+    },
+    {
+      "id": 11,
+      "fechaRegistro": "2023-11-23T23:31:52.278Z",
+      "estado": "PENDIENTE",
+      "nombre": "oso",
+      "especie": "PERRO",
+      "sexo": "MACHO",
+      "tamanio": "MEDIANO",
+      "edad": 3,
+      "descripcion": "perro de la cale juhuhfdhfuhdufhdufhduhfudhfdhfudhfuhdfuhdufhdyfhgdydghfydgfy",
+      "compatibilidad": [
+        "PERROS",
+        "NIÑOS"
+      ],
+      "imagenes": [
+        "../../../assets/img/OSO_1.jpg",
+        "../../../assets/img/OSO_2.jpg"
+      ],
+      "idUsuario": null
+    }
   ],
-  "solicitudes-adopcion": []
+  "solicitudes-adopcion": [
+    {
+      "fechaSolicitud": "2023-11-23T23:24:27.271Z",
+      "estado": "RECHAZADA",
+      "motivo": "djfdhjfudhfdjfjdf",
+      "idUser": 2,
+      "idAnimal": 1,
+      "id": 1
+    },
+    {
+      "fechaSolicitud": "2023-11-23T23:39:09.393Z",
+      "estado": "PENDIENTE",
+      "motivo": "",
+      "idUser": 9,
+      "idAnimal": 1,
+      "id": 2
+    }
+  ]
 }
